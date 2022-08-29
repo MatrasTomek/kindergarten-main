@@ -1,0 +1,123 @@
+@import "./variables.scss";
+
+
+@mixin standardButtonTransform {
+    width: 90px;
+    height: 30px;
+    background-color: $firstColor;
+    color: $secondColor;
+    border: $border-first;
+    border-radius: $button-radius;
+    font-size: $xs-fz;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        transform: scale(0.8, 0.8);
+    }
+
+    @media screen and (min-width:map-get($breakpoints, small)) {
+        font-size: $s-fz;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        font-size: $m-fz;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        width: 105px;
+        height: 35px;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        width: 120px;
+        height: 40px;
+        font-size: $l-fz;
+    }
+}
+
+@mixin biggerButtonTransformPlusFirst {
+    width: 120px;
+    height: 30px;
+    background-color: $firstColor;
+    color: $secondColor;
+    border: $border-first;
+    border-radius: $button-radius;
+    font-size: $xs-fz;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        transform: scale(0.8, 0.8);
+        background-color: $secondColor;
+        color: $firstColor;
+        border: $border-second;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, small)) {
+        font-size: $s-fz;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        font-size: $m-fz;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        width: 135px;
+        height: 35px;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        width: 150px;
+        height: 40px;
+        font-size: $l-fz;
+    }
+}
+
+@mixin biggerButtonTransformPlusTransparent {
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    color: $secondColor;
+    border: $border-second;
+    border-radius: $button-radius;
+    font-size: $xs-fz;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        transform: scale(0.8, 0.8);
+        background-color: $secondColor;
+        color: $firstColor;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, small)) {
+        font-size: $s-fz;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        font-size: $m-fz;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        width: 135px;
+        height: 35px;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        width: 150px;
+        height: 40px;
+        font-size: $l-fz;
+    }
+}
