@@ -121,3 +121,24 @@
         font-size: $l-fz;
     }
 }
+
+@mixin wrapper {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+@mixin inside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        width: 85%;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        width: 80%;
+    }
+}
