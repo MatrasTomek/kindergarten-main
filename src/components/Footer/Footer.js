@@ -42,7 +42,10 @@ const Footer = () => {
 				<div className={styles.copyrights}>
 					<p>copy_& 2022 Przedszkole Parafialne w Mokrzyskach</p>
 
-					<a href="https://www.developerweb.pl/"> madeBy: developerweb.pl</a>
+					<a href="https://www.developerweb.pl/" target="blanc">
+						{" "}
+						madeBy: developerweb.pl
+					</a>
 				</div>
 			</div>
 		</div>

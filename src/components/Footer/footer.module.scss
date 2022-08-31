@@ -29,7 +29,7 @@
                     flex-basis: 10%;
                     color: $secondColor;
                     margin-bottom: 20px;
-                    text-align: center;
+                    text-align: left;
 
                 }
 
@@ -165,6 +165,10 @@
         .inside {
             .components {
                 div {
+                    h3 {
+                        font-size: $xl-fz;
+                    }
+
                     div {
                         p {
                             font-size: $m-fz;

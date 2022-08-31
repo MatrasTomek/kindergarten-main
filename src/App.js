@@ -1,6 +1,6 @@
 import { HashRouter as Router } from "react-router-dom";
 import { Fragment } from "react";
-import { Footer } from "./components";
+import { Footer, Spinner } from "./components";
 
 const App = () => {
 	return (
@@ -8,9 +8,9 @@ const App = () => {
 			{/* <Header /> */}
 			<Fragment>{/* <MainSwitch /> */}</Fragment>
 			<Footer />
-			{/* <Spinner />
-			<TaskInformation />
-			<TopArrow /> */}
+			<Spinner />
+			{/* <TaskInformation /> */}
+			{/* <TopArrow /> */}
 		</Router>
 	);
 };
