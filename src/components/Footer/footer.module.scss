@@ -18,12 +18,14 @@
             justify-content: space-between;
             align-items: center;
 
-            div {
+            .about,
+            .contact,
+            .education {
                 flex-basis: 30%;
-                min-height: 300px;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+                height: 380px;
 
                 h3 {
                     flex-basis: 10%;
@@ -35,7 +37,6 @@
 
                 div {
                     flex-basis: 80%;
-
 
                     p {
                         margin-bottom: 10px;
@@ -73,7 +74,7 @@
 
         a {
             color: $thirdColor;
-            font-size: $xs-fz;
+            font-size: $xs-fz/1.2;
             font-weight: 700;
             transition: $transition;
 
@@ -92,7 +93,7 @@
         p,
         a {
             color: $thirdColor;
-            font-size: $xs-fz;
+            font-size: $xs-fz/1.2;
             font-weight: 700;
             margin-bottom: 10px;
             text-align: center;
@@ -110,8 +111,11 @@
     @media screen and (orientation: landscape) {
         .inside {
             .components {
-                div {
-                    min-height: 200px;
+
+                .about,
+                .contact,
+                .education {
+                    height: 320px;
                 }
             }
         }
@@ -121,7 +125,10 @@
 
         .inside {
             .components {
-                div {
+
+                .about,
+                .contact,
+                .education {
                     div {
                         p {
                             font-size: $s-fz;
@@ -145,26 +152,21 @@
 
             p,
             a {
-                font-size: $s-fz;
+                font-size: $s-fz/1.2;
             }
         }
     }
 
-    @media screen and (orientation: landscape) {
-        .inside {
-            .components {
-                div {
-                    min-height: 200px;
-                }
-            }
-        }
-    }
+
 
     @media screen and (min-width:map-get($breakpoints, x-large)) {
 
         .inside {
             .components {
-                div {
+
+                .about,
+                .contact,
+                .education {
                     h3 {
                         font-size: $xl-fz;
                     }
@@ -192,7 +194,7 @@
 
             p,
             a {
-                font-size: $m-fz;
+                font-size: $m-fz/1.2;
             }
         }
     }
