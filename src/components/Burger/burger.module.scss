@@ -1,0 +1,31 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+            fill: $firstColor;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        div {
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        display: none;
+    }
+}
