@@ -1,0 +1,33 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    position: fixed;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+    width: 95vw;
+    height: 70px;
+    background-color: $secondColor;
+    border-radius: $box-radius;
+    z-index: 100;
+
+    .inside {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+
+
+        .logo {
+            flex-basis: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu {
+            flex-basis: 75%;
+        }
+    }
+}
