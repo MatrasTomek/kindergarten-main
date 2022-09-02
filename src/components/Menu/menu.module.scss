@@ -17,6 +17,7 @@
 
 
 
+
     a {
 
         width: 200px;
@@ -30,6 +31,7 @@
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;
+        cursor: pointer;
 
         &:hover {
             background-color: $firstColor;
@@ -40,6 +42,9 @@
 
 
     }
+
+
+
 
     @media screen and (orientation: landscape) {
         flex-direction: row;
@@ -69,6 +74,7 @@
         z-index: 100;
 
 
+
         a {
             margin-bottom: 0;
             width: auto;
@@ -83,6 +89,7 @@
             text-transform: uppercase;
             text-align: center;
             text-decoration: none;
+            cursor: pointer;
 
             &:hover {
                 background-color: $secondColor;

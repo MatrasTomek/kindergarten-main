@@ -1,0 +1,387 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    @include wrapper;
+
+    .banner {
+        img {
+            width: 100%;
+            height: 35vh;
+        }
+    }
+
+    .inside {
+        @include inside;
+
+        h2 {
+            font-size: $l-fz;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: $xs-fz;
+            margin-bottom: 20px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .center {
+            text-align: center;
+        }
+
+
+        .picturesItems4 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+
+            img {
+                display: block;
+                flex-basis: 100%;
+                max-width: 100%;
+                height: 200px;
+                margin-bottom: 10px;
+
+            }
+
+            img:nth-last-child(1) {
+                flex-basis: 100%;
+                max-width: 100%;
+                height: 240px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .pictureItem1 {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 240px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .picturesItemsMany {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                flex-basis: 100%;
+                max-width: 100%;
+                height: 240px;
+                margin-bottom: 10px;
+            }
+
+            img:nth-child(7),
+            img:nth-child(8),
+            img:nth-child(9) {
+                height: 300px;
+            }
+
+            img:nth-last-child(1) {
+                flex-basis: 100%;
+                max-width: 100%;
+                height: 320px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        .banner {
+            img {
+
+                height: 65vh;
+            }
+        }
+
+        .inside {
+            .picturesItems4 {
+
+                img {
+
+                    flex-basis: 45%;
+                    width: 45%;
+                    height: 200px;
+                    margin-bottom: 10px;
+
+                }
+
+                img:nth-last-child(1) {
+                    flex-basis: 45%;
+                    width: 45%;
+                    height: 200px;
+
+                }
+            }
+
+            .pictureItem1 {
+
+
+                img {
+
+                    height: 300px;
+
+                }
+            }
+
+            .picturesItemsMany {
+
+
+                img {
+                    flex-basis: 45%;
+                    width: 45%;
+                    height: 220px;
+                    margin-bottom: 10px;
+                }
+
+                img:nth-child(7),
+                img:nth-child(8),
+                img:nth-child(9) {
+                    height: 220px;
+                }
+
+                img:nth-last-child(1) {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                    height: 320px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, small)) {
+        .banner {
+            img {
+
+                height: 65vh;
+            }
+        }
+
+        .inside {
+            .picturesItems4 {
+
+                img {
+
+                    flex-basis: 45%;
+                    width: 45%;
+                    height: 200px;
+
+
+                }
+
+                img:nth-last-child(1) {
+                    flex-basis: 45%;
+                    width: 45%;
+                    height: 200px;
+
+                }
+            }
+
+            .pictureItem1 {
+
+
+                img {
+
+                    height: 300px;
+
+                }
+            }
+
+            .picturesItemsMany {
+
+
+                img {
+                    flex-basis: 45%;
+                    width: 45%;
+                    height: 220px;
+                    margin-bottom: 10px;
+                }
+
+                img:nth-child(7),
+                img:nth-child(8),
+                img:nth-child(9) {
+                    height: 220px;
+                }
+
+                img:nth-last-child(1) {
+
+                    max-width: 100%;
+                    height: 320px;
+
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        .banner {
+            img {
+
+                height: 50vh;
+            }
+        }
+
+        .inside {
+            h2 {
+                font-size: $xl-fz;
+
+            }
+
+            p {
+                font-size: $s-fz;
+            }
+        }
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        .inside {
+            h2 {
+                font-size: $xl-fz*1.2;
+
+            }
+
+            p {
+                font-size: $m-fz;
+            }
+
+            .picturesItems4 {
+
+                img {
+
+                    flex-basis: 32%;
+                    width: 32%;
+                    height: 200px;
+                    margin-bottom: 10px;
+
+                }
+
+                img:nth-last-child(1) {
+                    flex-basis: 100%;
+                    width: 100%;
+                    height: 400px;
+
+                }
+            }
+
+            .pictureItem1 {
+
+
+                img {
+
+                    height: 400px;
+
+                }
+            }
+
+            .picturesItemsMany {
+
+
+                img {
+                    flex-basis: 32%;
+                    width: 32%;
+                    height: 220px;
+
+                }
+
+                img:nth-child(7),
+                img:nth-child(8),
+                img:nth-child(9) {
+                    height: 280px;
+                }
+
+                img:nth-last-child(1) {
+
+                    height: 400px;
+
+                }
+            }
+        }
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+
+        .banner {
+            img {
+                height: 60vh;
+            }
+        }
+
+        .inside {
+
+            h2 {
+                font-size: $xl-fz*1.4;
+
+            }
+
+            p {
+                font-size: $l-fz;
+
+            }
+
+
+
+
+            .picturesItems4 {
+
+
+
+                img {
+
+                    height: 220px;
+
+                }
+
+                img:nth-last-child(1) {
+
+                    height: 480px;
+
+                }
+            }
+
+            .pictureItem1 {
+
+
+                img {
+
+                    height: 480px;
+
+                }
+            }
+
+            .picturesItemsMany {
+
+
+                img {
+
+                    height: 240px;
+
+                }
+
+                img:nth-child(7),
+                img:nth-child(8),
+                img:nth-child(9) {
+                    height: 320px;
+                }
+
+                img:nth-last-child(1) {
+
+                    height: 480px;
+
+                }
+            }
+        }
+    }
+}

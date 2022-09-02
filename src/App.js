@@ -1,12 +1,14 @@
 import { HashRouter as Router } from "react-router-dom";
 import { Fragment } from "react";
-import { Footer, Header, Spinner, TopArrow } from "./components";
+import { Footer, Header, MainSwitch, Spinner, TopArrow } from "./components";
 
 const App = () => {
 	return (
 		<Router>
 			<Header />
-			<Fragment>{/* <MainSwitch /> */}</Fragment>
+			<Fragment>
+				<MainSwitch />
+			</Fragment>
 			<Footer />
 			<Spinner />
 			{/* <TaskInformation /> */}
