@@ -1,0 +1,101 @@
+@import "../../RootStyles/common.scss";
+
+.insideMobile {
+    position: fixed;
+    top: calc(3% + 70px);
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondColor;
+    border-radius: $box-radius;
+    padding: 20px;
+    z-index: 100;
+    transition: $transition;
+
+
+
+
+    a {
+
+        width: 200px;
+        text-align: center;
+        margin-bottom: 12px;
+        padding: 2px;
+        border-radius: $box-radius;
+        color: $firstColor;
+        font-weight: 700;
+        font-size: $xs-fz;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $firstColor;
+            color: $secondColor;
+
+        }
+
+
+
+    }
+
+
+
+
+    @media screen and (orientation: landscape) {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        display: none;
+
+    }
+}
+
+.insideDesktop {
+    display: none;
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: $secondColor;
+        border-radius: $box-radius;
+        padding: 0;
+        z-index: 100;
+
+
+
+        a {
+            margin-bottom: 0;
+            width: auto;
+            font-size: $xs-fz/1.2;
+            transition: $transition;
+            text-align: center;
+
+            padding: 2px;
+            border-radius: $box-radius;
+            color: $firstColor;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $secondColor;
+                color: $thirdColor;
+            }
+        }
+
+    }
+}

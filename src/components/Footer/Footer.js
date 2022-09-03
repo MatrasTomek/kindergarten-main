@@ -40,7 +40,7 @@ const Footer = () => {
 					<Link to="/rodo">Polityka Rodo</Link>
 				</div>
 				<div className={styles.copyrights}>
-					<p>copy_& 2022 Przedszkole Parafialne w Mokrzyskach</p>
+					<p>&copy; 2022 Przedszkole Parafialne w Mokrzyskach</p>
 
 					<a href="https://www.developerweb.pl/" target="blanc">
 						{" "}
