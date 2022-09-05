@@ -2,6 +2,7 @@ export { default as AboutUs } from "./AboutUs";
 export { default as Burger } from "./Burger";
 export { default as Button } from "./Button";
 export { default as Cadre } from "./Cadre";
+export { default as Documents } from "./Documents";
 export { default as Footer } from "./Footer";
 export { default as Header } from "./Header";
 export { default as MainSwitch } from "./MainSwitch";
