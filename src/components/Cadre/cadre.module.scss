@@ -1,0 +1,327 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    @include wrapper;
+
+    .banner {
+        img {
+            width: 100%;
+            height: 35vh;
+        }
+    }
+
+    .inside {
+        @include inside;
+
+        h2 {
+            font-size: $l-fz;
+            margin-bottom: 20px;
+            color: $firstColor;
+        }
+
+        .title {
+            margin-bottom: 20px;
+
+        }
+
+        p {
+            font-size: $xs-fz;
+            text-align: center;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                font-size: $xs-fz;
+                text-align: center;
+                margin-bottom: 10px;
+                margin-top: 30px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            table {
+
+                tr {
+                    background-color: $thirdColor;
+                    border-radius: $box-radius;
+
+                    th {
+                        text-align: left;
+                    }
+
+                    th,
+                    td {
+
+                        padding: 5px;
+                        font-size: $xs-fz/1.2;
+                        margin: 0;
+
+                        span {
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: $xs-fz/1.2;
+                            text-align: left;
+                            margin: 0;
+
+                            span {
+                                text-align: left;
+                                font-style: italic;
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+
+
+
+
+
+        .pictureItem1 {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 220px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+
+
+    }
+
+    @media screen and (orientation: landscape) {
+        .banner {
+            img {
+
+                height: 65vh;
+            }
+        }
+
+        .inside {
+
+            .pictureItem1 {
+
+
+                img {
+
+                    height: 300px;
+
+                }
+            }
+
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, small)) {
+        .banner {
+            img {
+
+                height: 65vh;
+            }
+        }
+
+        .inside {
+
+
+            .pictureItem1 {
+
+
+                img {
+
+                    height: 300px;
+
+                }
+            }
+
+
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        .banner {
+            img {
+
+                height: 50vh;
+            }
+        }
+
+        .inside {
+            h2 {
+                font-size: $xl-fz;
+
+            }
+
+            .title {
+                p {
+                    font-size: $s-fz;
+                }
+            }
+
+            .table {
+
+                p {
+                    font-size: $s-fz;
+
+                }
+
+                table {
+
+                    tr {
+
+                        th,
+                        td {
+
+                            font-size: $xs-fz;
+
+                            p {
+                                font-size: $xs-fz;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        .inside {
+            h2 {
+                font-size: $xl-fz*1.2;
+
+            }
+
+            .title {
+                p {
+                    font-size: $m-fz;
+                }
+            }
+
+            .table {
+
+                p {
+                    font-size: $m-fz;
+
+                }
+
+                table {
+
+                    tr {
+
+                        th,
+                        td {
+
+                            font-size: $xs-fz*1.2;
+
+                            p {
+                                font-size: $xs-fz*1.2;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+
+
+            .pictureItem1 {
+
+                img {
+
+                    height: 400px;
+                }
+            }
+
+
+        }
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+
+        .banner {
+            img {
+                height: 60vh;
+            }
+        }
+
+        .inside {
+
+            h2 {
+                font-size: $xl-fz*1.4;
+
+            }
+
+
+            .title {
+                p {
+                    font-size: $m-fz*1.2;
+                }
+            }
+
+            .table {
+
+                p {
+                    font-size: $m-fz*1.2;
+
+                }
+
+                table {
+
+                    tr {
+
+                        th,
+                        td {
+
+                            font-size: $xs-fz*1.4;
+
+                            p {
+                                font-size: $xs-fz*1.4;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+
+            .pictureItem1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                img {
+
+                    height: 400px;
+                    width: 600px;
+                }
+            }
+
+
+        }
+    }
+}
