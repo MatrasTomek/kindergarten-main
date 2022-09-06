@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $secondColor;
+    background-color: $firstColor;
     border-radius: $box-radius;
     padding: 20px;
     z-index: 100;
@@ -25,7 +25,7 @@
         margin-bottom: 12px;
         padding: 2px;
         border-radius: $box-radius;
-        color: $firstColor;
+        color: $secondColor;
         font-weight: 700;
         font-size: $xs-fz;
         text-transform: uppercase;
@@ -34,8 +34,8 @@
         cursor: pointer;
 
         &:hover {
-            background-color: $firstColor;
-            color: $secondColor;
+            background-color: $secondColor;
+            color: $firstColor;
 
         }
 
@@ -68,7 +68,7 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        background-color: $secondColor;
+        background-color: $firstColor;
         border-radius: $box-radius;
         padding: 0;
         z-index: 100;
@@ -84,7 +84,7 @@
 
             padding: 2px;
             border-radius: $box-radius;
-            color: $firstColor;
+            color: $secondColor;
             font-weight: 700;
             text-transform: uppercase;
             text-align: center;
@@ -92,7 +92,7 @@
             cursor: pointer;
 
             &:hover {
-                background-color: $secondColor;
+                background-color: $firstColor;
                 color: $thirdColor;
             }
         }

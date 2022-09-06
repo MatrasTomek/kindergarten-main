@@ -1,0 +1,275 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    @include wrapper;
+
+    .banner {
+        img {
+            width: 100%;
+            height: 35vh;
+        }
+    }
+
+    .inside {
+        @include inside;
+
+        h2 {
+            font-size: $l-fz;
+            margin-bottom: 20px;
+            color: $firstColor;
+        }
+
+        p {
+            font-size: $xs-fz;
+            margin-bottom: 10px;
+
+        }
+
+        .maps {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                    width: 250px;
+
+                    input,
+                    textarea {
+                        border: $border-first;
+                        border-radius: $box-radius;
+                        padding: 5px;
+                        color: $firstColor;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        font-size: $xs-fz/1.2;
+                    }
+
+
+                }
+
+                .checkbox {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+
+                    label>input[type="checkbox"] {
+                        display: none;
+                    }
+
+                    label>input[type="checkbox"]+*::before {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: bottom;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 5px;
+                        border: 1px solid $firstColor;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    label>input[type="checkbox"]:checked+*::before {
+                        content: "✓";
+                        color: $firstColor;
+                        text-align: center;
+                        background: $secondColor;
+                        border-color: $firstColor;
+                    }
+
+                    label>input[type="checkbox"]:checked+* {
+                        color: $firstColor;
+                        font-weight: 700;
+                    }
+
+                    label {
+                        text-align: center;
+                        span {
+
+                            a {
+                                color: $thirdColor;
+                                transition: $transition;
+                                font-size: $xs-fz;
+                                font-weight: 700;
+
+                                &:hover {
+                                    color: $firstColor;
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                button {
+                    @include standardButtonTransform;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .errorInfo {
+                flex-basis: 100%;
+                text-align: center;
+                font-size: $s-fz;
+                color: $firstColor;
+                font-weight: 700;
+                height: 20px;
+            }
+        }
+
+    }
+
+    @media screen and (orientation: landscape) {
+        .banner {
+            img {
+
+                height: 65vh;
+            }
+        }
+
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, small)) {
+        .banner {
+            img {
+
+                height: 65vh;
+            }
+        }
+
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        .banner {
+            img {
+
+                height: 50vh;
+            }
+        }
+
+        .inside {
+            h2 {
+                font-size: $xl-fz;
+
+            }
+
+            p {
+                font-size: $s-fz;
+            }
+
+            .form {
+
+
+                form {
+
+
+                    div {
+
+
+                        width: 350px;
+
+                        span {
+                            font-size: $xs-fz;
+                        }
+                    }
+
+
+
+                }
+
+                .errorInfo {
+
+                    font-size: $m-fz;
+
+                }
+            }
+
+
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        .inside {
+            h2 {
+                font-size: $xl-fz*1.2;
+
+            }
+
+            p {
+                font-size: $m-fz;
+            }
+
+            .form {
+                form {
+
+                    div {
+
+                        width: 450px;
+
+                        span {
+                            font-size: $m-fz;
+                        }
+                    }
+
+
+
+                }
+
+                .errorInfo {
+
+                    font-size: $l-fz;
+
+                }
+            }
+
+
+        }
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+
+        .banner {
+            img {
+                height: 60vh;
+            }
+        }
+
+        .inside {
+
+            h2 {
+                font-size: $xl-fz*1.4;
+
+            }
+
+            p {
+                font-size: $l-fz;
+
+            }
+
+
+        }
+    }
+}
