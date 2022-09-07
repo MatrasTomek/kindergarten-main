@@ -1,0 +1,63 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: 3s;
+
+        .content {
+            position: absolute;
+            left: 20%;
+            top: 40%;
+
+            p {
+                color: $secondColor;
+                font-weight: 700;
+                font-size: $xxl-fz;
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        .image {
+            .content {
+                p {
+                    font-size: $xxl-fz*1.5;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        .image {
+            .content {
+                p {
+                    font-size: $xxl-fz*2;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        .image {
+            .content {
+                p {
+                    font-size: $xxl-fz*2.5;
+                }
+            }
+        }
+    }
+
+}

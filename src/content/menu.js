@@ -1,11 +1,11 @@
 export const MENU_ITEMS = [
 	{
 		id: "start",
-		path: "start",
+		path: "/",
 		name: "start",
 	},
 	{
-		id: "info",
+		id: "news",
 		path: "aktualnosci",
 		name: "aktualności",
 	},

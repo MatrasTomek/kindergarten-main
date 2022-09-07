@@ -1,4 +1,5 @@
 export { default as AboutUs } from "./AboutUs";
+export { default as BannerSlider } from "./BannerSlider";
 export { default as Burger } from "./Burger";
 export { default as Button } from "./Button";
 export { default as Cadre } from "./Cadre";
@@ -11,4 +12,5 @@ export { default as Maps } from "./Maps";
 export { default as Menu } from "./Menu";
 export { default as Patroness } from "./Patroness";
 export { default as Spinner } from "./Spinner";
+export { default as StartViev } from "./StartViev";
 export { default as TopArrow } from "./TopArrow";
