@@ -21,12 +21,6 @@ const BannerSlider = () => {
 		</div>
 	));
 
-	// const slideShow = () => {
-	// 	slider[picIndex].props.style.opacity = "0";
-	// 	slider[picIndex + 1 === BANNER_SLIDER.length ? 0 : picIndex + 1].props.style.opacity = "0";
-	// };
-	// slideShow();
-
 	const slideShow = () => {
 		slider[picIndex].props.style.opacity = "0";
 		slider[picIndex + 1 === BANNER_SLIDER.length ? 0 : picIndex + 1].props.style.opacity = "0";
@@ -51,11 +45,11 @@ const BannerSlider = () => {
 		<div key={item.id} id={item.id} className={styles.dot} style={{}} onClick={handleChangeSlide}></div>
 	));
 
-	// const activeDot = () => {
-	// 	dots[picIndex].props.style.backgroundColor = "rgb(18, 216, 0)";
-	// 	dots[picIndex].props.style.border = "2px solid rgb(23, 23, 184)";
-	// };
-	// activeDot();
+	const activeDot = () => {
+		dots[picIndex].props.style.backgroundColor = "rgb(180, 180, 180)";
+		dots[picIndex].props.style.border = "2px solid rgb(23, 23, 184)";
+	};
+	activeDot();
 
 	return (
 		<div className={styles.wrapper}>

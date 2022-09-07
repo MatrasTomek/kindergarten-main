@@ -28,6 +28,31 @@
                 font-size: $xxl-fz;
             }
         }
+
+
+    }
+
+    .dots {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 10%;
+
+
+        .dot {
+            width: 40px;
+            border: 2px solid $firstColor;
+            height: 10px;
+            background-color: $secondColor;
+            border-radius: $box-radius;
+            transition: 1s;
+            cursor: pointer;
+        }
     }
 
     @media screen and (min-width:map-get($breakpoints, medium)) {
@@ -36,6 +61,16 @@
                 p {
                     font-size: $xxl-fz*1.5;
                 }
+            }
+        }
+
+        .dots {
+            width: 30%;
+            height: 10%;
+
+            .dot {
+                width: 50px;
+                height: 15px;
             }
         }
     }
@@ -56,6 +91,16 @@
                 p {
                     font-size: $xxl-fz*2.5;
                 }
+            }
+        }
+
+        .dots {
+            width: 20%;
+
+
+            .dot {
+                width: 60px;
+                height: 20px;
             }
         }
     }
