@@ -1,5 +1,33 @@
 @import "../../RootStyles/common.scss";
 
+// @keyframes contentShow {
+//     0% {
+//         opacity: 0;
+//         top: 60%;
+//     }
+
+//     20% {
+//         opacity: 0;
+//         top: 60%;
+//     }
+
+//     40% {
+//         opacity: 1;
+//         top: 40%;
+//     }
+
+//     95% {
+//         opacity: 1;
+//         top: 40%;
+//     }
+
+//     100% {
+//         opacity: 0;
+//         top: 60%;
+//     }
+
+// }
+
 .wrapper {
     position: relative;
     width: 100%;
@@ -21,6 +49,8 @@
             position: absolute;
             left: 20%;
             top: 40%;
+
+            // animation: contentShow 7s infinite;
 
             p {
                 color: $secondColor;

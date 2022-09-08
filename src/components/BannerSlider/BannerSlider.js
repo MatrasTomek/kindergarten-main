@@ -13,9 +13,20 @@ const BannerSlider = () => {
 		}
 		setPicIndex(indexNo);
 	};
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			changeIndex();
+		}, 7000);
+
+		return () => {
+			clearInterval(interval);
+		};
+	});
+
 	const slider = BANNER_SLIDER.map((item) => (
 		<div key={item.id} className={styles.image} style={{ backgroundImage: `url(${item.imgPathBig})`, left: "0%" }}>
-			<div className={styles.content}>
+			<div className={styles.content} style={{}}>
 				<p>{item.content} </p>
 			</div>
 		</div>
@@ -27,15 +38,12 @@ const BannerSlider = () => {
 	};
 	slideShow();
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			changeIndex();
-		}, 6000);
+	// const contentShow = () => {
+	// 	slider[picIndex].props.children.props.style.opacity = "1";
+	// 	slider[picIndex + 1 === BANNER_SLIDER.length ? 0 : picIndex + 1].props.children.props.style.opacity = "1";
+	// };
 
-		return () => {
-			clearInterval(interval);
-		};
-	});
+	// contentShow();
 
 	const handleChangeSlide = (e) => {
 		setPicIndex(e.target.id - 1);

@@ -7,6 +7,7 @@
 /public/images
 /public/assets
 .env
+/src/assets/img
 
 # testing
 /coverage

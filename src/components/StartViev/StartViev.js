@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllNews } from "../../data/actions";
 import { BannerSlider } from "../../components";
+import { AboutUs, InfoSection, OurCadre } from "./Sections";
 import styles from "./startViev.module.scss";
 
 const StartViev = () => {
@@ -22,9 +23,15 @@ const StartViev = () => {
 				<BannerSlider />
 			</div>
 			<div className={styles.inside}>
-				<div className={styles.info}></div>
-				<div className={styles.aboutUs}></div>
-				<div className={styles.ourCadre}></div>
+				<div className={styles.info}>
+					<InfoSection />
+				</div>
+				<div className={styles.aboutUs}>
+					<AboutUs />
+				</div>
+				<div className={styles.ourCadre}>
+					<OurCadre />
+				</div>
 				<div className={styles.news}></div>
 			</div>
 		</div>

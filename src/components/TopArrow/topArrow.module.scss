@@ -27,9 +27,13 @@
         height: 40px;
         background-color: $border-second;
         border-radius: 50%;
-        border-bottom: 2px solid $firstColor;
+        border-bottom: 2px solid $thirdColor;
         cursor: pointer;
 
+        svg {
+            fill: $thirdColor;
+
+        }
 
     }
 

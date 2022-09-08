@@ -8,4 +8,10 @@
         height: 100vh;
 
     }
+
+    .inside {
+        .aboutUs {
+            background-color: $firstColor;
+        }
+    }
 }
