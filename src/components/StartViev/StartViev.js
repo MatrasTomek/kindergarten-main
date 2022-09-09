@@ -4,18 +4,21 @@ import { getAllNews } from "../../data/actions";
 import { BannerSlider } from "../../components";
 import { AboutUs, InfoSection, OurCadre } from "./Sections";
 import styles from "./startViev.module.scss";
+import NewsSection from "./Sections/NewsSection";
 
 const StartViev = () => {
 	const news = useSelector((store) => store.news);
 	const dispatch = useDispatch();
 
-	// useEffect(() => {
-	// 	if (!news.length) {
-	// 		dispatch(getAllNews());
-	// 	} else {
-	// 		return;
-	// 	}
-	// }, [news, dispatch]);
+	useEffect(() => {
+		if (!news.length) {
+			dispatch(getAllNews());
+		} else {
+			return;
+		}
+	}, [news, dispatch]);
+
+	const newsItem = news[news.length - 1];
 
 	return (
 		<div className={styles.wrapper}>
@@ -32,7 +35,9 @@ const StartViev = () => {
 				<div className={styles.ourCadre}>
 					<OurCadre />
 				</div>
-				<div className={styles.news}></div>
+				<div className={styles.news}>
+					<NewsSection newsItem={newsItem} />
+				</div>
 			</div>
 		</div>
 	);

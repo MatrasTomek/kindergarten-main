@@ -7,12 +7,12 @@
 
     .text {
         h2 {
-            color: $firstColor;
+            color: $secondColor;
             margin-bottom: 20px;
         }
 
         p {
-            color: $firstColor;
+            color: $secondColor;
             margin-bottom: 20px;
         }
 
@@ -20,18 +20,17 @@
             margin-left: 50%;
             max-width: 200px;
             text-decoration: none;
-            color: $firstColor;
+            color: $secondColor;
             font-weight: 700;
             transition: $transition;
             padding-bottom: 10px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid $firstColor;
+            border-bottom: 2px solid $secondColor;
             display: flex;
             align-items: center;
             justify-content: space-around;
 
             svg {
-                fill: $firstColor;
+                fill: $secondColor;
                 transition: $transition;
             }
 
@@ -47,22 +46,73 @@
 
     .item {
         width: 100%;
-        height: 200px;
+        // height: 200px;
+        border: 2px solid $secondColor;
         border-radius: $max-radius;
         border-top-right-radius: 0;
         margin-bottom: 40px;
-        background-image: url(../../../assets/img/startViev/colorful-4043742_640.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        cursor: pointer;
+
+
+        img {
+            flex-basis: 50%;
+            width: 50%;
+            height: 120px;
+            border-radius: $box-radius;
+            border-top-right-radius: 0;
+            border-top-left-radius: $max-radius;
+        }
+
+        h3 {
+            flex-basis: 48%;
+            color: $secondColor;
+            text-align: center;
+            padding: 5px;
+        }
+
+        p {
+            flex-basis: 100%;
+            color: $secondColor;
+            text-align: center;
+            padding: 10px;
+        }
     }
 
     @media screen and (orientation:landscape) {
         .item {
             height: 300px;
+
+            img {
+                height: 250px;
+
+            }
         }
     }
 
     @media screen and (min-width:map-get($breakpoints, medium)) {
+        .item {
+            height: 300px;
+
+            img {
+                height: 250px;
+
+            }
+
+            h3 {
+                padding-top: 30px;
+                font-size: $xl-fz;
+            }
+
+            p {
+                font-size: $m-fz;
+
+            }
+
+        }
+
         .text {
             h2 {
                 font-size: $xxl-fz;
@@ -77,12 +127,15 @@
             }
         }
 
-        .item {
-            height: 300px;
-        }
+
     }
 
     @media screen and (min-width:map-get($breakpoints, large)) {
+        .item {
+            img {
+                height: 200px;
+            }
+        }
 
         display: flex;
         justify-content: space-between;
