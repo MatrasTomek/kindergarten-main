@@ -1,9 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { delPicItem, setPicItem } from "../../data/actions";
 import { Button } from "../../components";
 import styles from "./successItem.module.scss";
 
 const SuccessItem = ({ item }) => {
 	const { imagePath, title, date } = item;
+
+	const navigate = useNavigate();
+	const dispatch = useDispatch();
+
+	const handleOpenSelectedItemsViev = () => {
+		dispatch(delPicItem());
+		dispatch(setPicItem(item));
+		navigate("/sukcesy-element");
+	};
 
 	return (
 		<div className={styles.wrapper}>
@@ -11,7 +23,7 @@ const SuccessItem = ({ item }) => {
 			<p className={styles.date}>data: {date}</p>
 			<h3>{title}</h3>
 			<div className={styles.button}>
-				<Button name="zobacz" type="button" />
+				<Button name="zobacz" type="button" onClick={handleOpenSelectedItemsViev} />
 			</div>
 		</div>
 	);

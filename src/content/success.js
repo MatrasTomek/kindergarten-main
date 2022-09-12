@@ -6,6 +6,7 @@ export const SUCCESS_ITEMS = [
 		content1: "",
 		signature: "",
 		imagePath: "images/wystepPiknik2022",
+		imgFolderLength: 24,
 	},
 	{
 		id: "success2",
@@ -14,6 +15,7 @@ export const SUCCESS_ITEMS = [
 		content1: "",
 		signature: "",
 		imagePath: "images/wielkanoc2022",
+		imgFolderLength: 15,
 	},
 	{
 		id: "success1",
@@ -22,5 +24,6 @@ export const SUCCESS_ITEMS = [
 		content1: "",
 		signature: "",
 		imagePath: "images/szczepanow2021",
+		imgFolderLength: 51,
 	},
 ];
