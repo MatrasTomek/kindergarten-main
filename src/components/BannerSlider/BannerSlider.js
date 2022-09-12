@@ -5,14 +5,22 @@ import styles from "./bannerSlider.module.scss";
 const BannerSlider = () => {
 	const [picIndex, setPicIndex] = useState(0);
 
-	let indexNo = picIndex;
+	let index = picIndex;
 	const changeIndex = () => {
-		indexNo++;
-		if (indexNo >= BANNER_SLIDER.length) {
-			indexNo = 0;
+		index++;
+		if (index >= BANNER_SLIDER.length) {
+			index = 0;
 		}
-		setPicIndex(indexNo);
+		setPicIndex(index);
 	};
+
+	const slider = BANNER_SLIDER.map((item) => (
+		<div key={item.id} className={styles.image} style={{ backgroundImage: `url(${item.imgPathBig})`, left: "0%" }}>
+			<div className={styles.content} style={{}}>
+				<p>{item.content} </p>
+			</div>
+		</div>
+	)).reverse();
 
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -22,28 +30,14 @@ const BannerSlider = () => {
 		return () => {
 			clearInterval(interval);
 		};
-	});
-
-	const slider = BANNER_SLIDER.map((item) => (
-		<div key={item.id} className={styles.image} style={{ backgroundImage: `url(${item.imgPathBig})`, left: "0%" }}>
-			<div className={styles.content} style={{}}>
-				<p>{item.content} </p>
-			</div>
-		</div>
-	));
+	}, []);
 
 	const slideShow = () => {
-		slider[picIndex].props.style.opacity = "0";
-		slider[picIndex + 1 === BANNER_SLIDER.length ? 0 : picIndex + 1].props.style.opacity = "0";
+		slider[picIndex].props.style.opacity = "1";
+		slider[picIndex].props.children.props.style.opacity = "1";
+		slider[picIndex].props.children.props.style.top = "40%";
 	};
 	slideShow();
-
-	// const contentShow = () => {
-	// 	slider[picIndex].props.children.props.style.opacity = "1";
-	// 	slider[picIndex + 1 === BANNER_SLIDER.length ? 0 : picIndex + 1].props.children.props.style.opacity = "1";
-	// };
-
-	// contentShow();
 
 	const handleChangeSlide = (e) => {
 		setPicIndex(e.target.id - 1);

@@ -14,4 +14,5 @@ export { NewsItem, NewsViev } from "./News";
 export { default as Patroness } from "./Patroness";
 export { default as Spinner } from "./Spinner";
 export { default as StartViev } from "./StartViev";
+export { Success, SuccessItem } from "./Success";
 export { default as TopArrow } from "./TopArrow";

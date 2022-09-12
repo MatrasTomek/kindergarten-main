@@ -6,9 +6,10 @@
     .banner {
         width: 100%;
         height: 35vh;
-        background-image: url('../../assets/img/bannersInVievs/news_640.jpg');
+        background-image: url('../../assets/img/bannersInVievs/giraffe-1959110_640.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+
     }
 
     .inside {
@@ -20,7 +21,7 @@
             color: $firstColor;
         }
 
-        .newsItems {
+        .itemsViev {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -61,7 +62,7 @@
 
     @media screen and (min-width:map-get($breakpoints, large)) {
         .banner {
-            background-image: url('../../assets/img/bannersInVievs/news_1920.jpg');
+            background-image: url('../../assets/img/bannersInVievs/giraffe-1959110.jpg');
         }
 
         .inside {
@@ -69,7 +70,15 @@
                 font-size: $xl-fz*1.2;
 
             }
+
+            .itemsViev {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
         }
+
     }
 
     @media screen and (min-width:map-get($breakpoints, x-large)) {
