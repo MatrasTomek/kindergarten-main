@@ -44,11 +44,14 @@
         background-size: cover;
         background-position: center;
         transition: 3s;
+        opacity: 0;
 
         .content {
             position: absolute;
             left: 20%;
-            top: 40%;
+            top: 60%;
+            opacity: 0;
+            transition: 3s;
 
             // animation: contentShow 7s infinite;
 
@@ -75,7 +78,7 @@
 
 
         .dot {
-            width: 40px;
+            width: 10px;
             border: 2px solid $firstColor;
             height: 10px;
             background-color: $secondColor;
@@ -99,7 +102,7 @@
             height: 10%;
 
             .dot {
-                width: 50px;
+                width: 15px;
                 height: 15px;
             }
         }
@@ -128,10 +131,6 @@
             width: 20%;
 
 
-            .dot {
-                width: 60px;
-                height: 20px;
-            }
         }
     }
 
