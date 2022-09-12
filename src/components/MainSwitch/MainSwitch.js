@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { AboutUs, Cadre, Contact, Documents, Patroness } from "../../components";
+import { AboutUs, Cadre, Contact, Documents, NewsViev, Patroness, StartViev } from "../../components";
 
 const MainSwitch = () => {
 	return (
@@ -11,6 +11,8 @@ const MainSwitch = () => {
 				<Route exact path="/kontakt" element={<Contact />} />
 				<Route exact path="/dokumenty" element={<Documents />} />
 				<Route exact path="/patronka" element={<Patroness />} />
+				<Route exact path="/aktualnosci" element={<NewsViev />} />
+				<Route exact path="/" element={<StartViev />} />
 				{/* <Route path="*" element={<Navigate to="/" />} /> */}
 			</Routes>
 		</>

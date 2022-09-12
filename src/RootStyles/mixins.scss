@@ -122,6 +122,45 @@
     }
 }
 
+@mixin standardButtonNoTransform {
+    width: 90px;
+    height: 30px;
+    background-color: $firstColor;
+    color: $secondColor;
+    border: $border-first;
+    border-radius: $button-radius;
+    font-size: $xs-fz;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        color: $firstColor;
+        background-color: $secondColor;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, small)) {
+        font-size: $s-fz;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        font-size: $m-fz;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        width: 105px;
+        height: 35px;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+        width: 120px;
+        height: 40px;
+        font-size: $l-fz;
+    }
+}
+
 @mixin wrapper {
     width: 100%;
     min-height: 100vh;

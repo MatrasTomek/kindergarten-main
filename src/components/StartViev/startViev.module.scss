@@ -1,0 +1,21 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    @include wrapper;
+
+    .bigBanner {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .inside {
+        .aboutUs {
+            background-color: $firstColor;
+        }
+
+        .news {
+            background-color: $firstColor;
+        }
+    }
+}

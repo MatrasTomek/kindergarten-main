@@ -1,11 +1,11 @@
 export const MENU_ITEMS = [
 	{
 		id: "start",
-		path: "start",
+		path: "/",
 		name: "start",
 	},
 	{
-		id: "info",
+		id: "news",
 		path: "aktualnosci",
 		name: "aktualności",
 	},
@@ -29,11 +29,7 @@ export const MENU_ITEMS = [
 		path: "kadra",
 		name: "kadra",
 	},
-	{
-		id: "grettings",
-		path: "podziekowania",
-		name: "podziękowania",
-	},
+
 	{
 		id: "success",
 		path: "sukcesy",
