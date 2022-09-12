@@ -17,10 +17,10 @@ export const BANNER_SLIDER = [
 		imgPathSmall: "images/banner/playground-2560993_640.jpg",
 		imgPathBig: "images/banner/playground-2560993_1920.jpg",
 	},
-	// {
-	// 	id: 4,
-	// 	content: "Smacznie jemy z własnej kuchni",
-	// 	imgPathSmall: "images/banner/girl-846357_640.jpg",
-	// 	imgPathBig: "images/banner/girl-846357_1920.jpg",
-	// },
+	{
+		id: 4,
+		content: "Smacznie jemy z własnej kuchni",
+		imgPathSmall: "images/banner/girl-846357_640.jpg",
+		imgPathBig: "images/banner/girl-846357_1920.jpg",
+	},
 ];

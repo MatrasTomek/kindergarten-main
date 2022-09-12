@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllNews } from "../../data/actions";
 import { BannerSlider } from "../../components";
-import { AboutUs, InfoSection, OurCadre } from "./Sections";
+import { AboutUs, InfoSection, OurCadre, SuccessSection } from "./Sections";
 import styles from "./startViev.module.scss";
 import NewsSection from "./Sections/NewsSection";
 
@@ -37,6 +37,9 @@ const StartViev = () => {
 				</div>
 				<div className={styles.news}>
 					<NewsSection newsItem={newsItem} />
+				</div>
+				<div className={styles.success}>
+					<SuccessSection />
 				</div>
 			</div>
 		</div>
