@@ -60,9 +60,7 @@ const Contact = () => {
 
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.banner}>
-				<img src="images/hist/banner.jpg" alt="widok przedszkola front" />
-			</div>
+			<div className={styles.banner}></div>
 			<div className={styles.inside}>
 				<h2>Kontakt</h2>
 				<p>{CONTACT.name}</p>
