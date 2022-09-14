@@ -37,7 +37,7 @@ const StartViev = () => {
 			</div>
 			<div className={styles.inside}>
 				<div className={styles.info}>
-					<InfoSection />
+					<InfoSection infoItem={informationItem} />
 				</div>
 				<div className={styles.aboutUs}>
 					<AboutUs />
