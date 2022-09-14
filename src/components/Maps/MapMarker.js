@@ -3,10 +3,12 @@ import { Marker } from "@react-google-maps/api";
 
 // const MapMarker = React.forwardRef((props, ref) => {
 
-const MapMarker = () => {
-	const handleOnClickMarker = () => {};
+const MapMarker = ({ setZoom }) => {
+	const handleOnClickMarker = () => {
+		setZoom(18);
+	};
 
-	const position = { lat: 50.00481, lng: 20.61541 };
+	const position = { lat: 50.0048, lng: 20.6154 };
 
 	// Note below
 	return (
@@ -15,11 +17,13 @@ const MapMarker = () => {
 			// title={title}
 			// ref={ref}
 			onClick={handleOnClickMarker}
-			icon={{
-				// url: "/icons/map-icon-green.svg",
-				anchor: new window.google.maps.Point(32, 32),
-				scaledSize: new window.google.maps.Size(62, 79),
-			}}
+			icon={
+				{
+					// url: "/icons/map-icon-green.svg",
+					// anchor: new window.google.maps.Point(32, 32),
+					// scaledSize: new window.google.maps.Size(62, 79),
+				}
+			}
 		/>
 	);
 };
