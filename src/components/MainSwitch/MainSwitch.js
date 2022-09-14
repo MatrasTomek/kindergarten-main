@@ -4,6 +4,7 @@ import {
 	Cadre,
 	Contact,
 	Documents,
+	InfoViev,
 	NewsViev,
 	Patroness,
 	StartViev,
@@ -20,6 +21,7 @@ const MainSwitch = () => {
 				<Route exact path="/kadra" element={<Cadre />} />
 				<Route exact path="/kontakt" element={<Contact />} />
 				<Route exact path="/dokumenty" element={<Documents />} />
+				<Route exact path="/ogloszenia" element={<InfoViev />} />
 				<Route exact path="/patronka" element={<Patroness />} />
 				<Route exact path="/aktualnosci" element={<NewsViev />} />
 				<Route exact path="/" element={<StartViev />} />

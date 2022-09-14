@@ -1,12 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./infoSection.module.scss";
 
-const InfoSection = () => {
+const InfoSection = ({ infoItem }) => {
+	const navigate = useNavigate();
+
+	const handleGotoInfoSite = () => {
+		navigate("/ogloszenia");
+	};
+
+	const infoItemViev = !infoItem ? (
+		<p>Dane się ładują...</p>
+	) : (
+		<>
+			<h3>{infoItem.title}</h3>
+			<p className={styles.date}>opublikowano: {infoItem.date}</p>
+		</>
+	);
+
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.text}>
 				<h2>Ogłoszenia</h2>
+				<p>Bierzące informacje, ogłoszenia i spotkania.</p>
 				<Link to="/ogloszenia">
 					Zobacz więcej
 					<svg
@@ -21,7 +37,9 @@ const InfoSection = () => {
 					</svg>
 				</Link>
 			</div>
-			<div className={styles.item}>InfoItem</div>
+			<div className={styles.item} onClick={handleGotoInfoSite}>
+				{infoItemViev}
+			</div>
 		</div>
 	);
 };

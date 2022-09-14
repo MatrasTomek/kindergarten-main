@@ -1,0 +1,112 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: $box-radius;
+    border: $border-first;
+
+
+    h3 {
+        padding: 20px;
+        text-align: center;
+        color: $firstColor;
+    }
+
+    p {
+        font-size: $xs-fz;
+        padding: 10px;
+    }
+
+    .date {
+        font-size: $xs-fz/1.2;
+        margin-bottom: 10px;
+        color: $thirdColor;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        button {
+            @include standardButtonNoTransform
+        }
+    }
+
+    div {
+
+
+        .signature {
+            text-align: right;
+            font-style: italic;
+
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, small)) {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        h3 {
+            flex-basis: 65%;
+            font-size: $l-fz;
+        }
+
+        .date {
+            font-size: $s-fz;
+        }
+
+        p {
+            flex-basis: 40%;
+            font-size: $s-fz;
+        }
+
+
+        .button {
+            flex-basis: 40%;
+        }
+
+    }
+
+
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+
+
+        h3 {
+            flex-basis: 65%;
+            font-size: $l-fz;
+        }
+
+        .date {
+            font-size: $m-fz;
+        }
+
+        p {
+
+            font-size: $m-fz;
+        }
+
+    }
+}

@@ -4,9 +4,7 @@ import styles from "./cadre.module.scss";
 const Cadre = () => {
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.banner}>
-				<img src="images/hist/banner.jpg" alt="widok przedszkola front" />
-			</div>
+			<div className={styles.banner}></div>
 			<div className={styles.inside}>
 				<h2>Nasza kadra</h2>
 				<div className={styles.title}>
