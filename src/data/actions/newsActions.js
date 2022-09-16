@@ -12,7 +12,7 @@ export const getAllNews = () => async (dispatch) => {
 	});
 	if (status === 200) {
 		dispatch(removeSpinner());
-		data.forEach((item) => (item.photo = `http://localhost:8080/news/photo/${item._id}`));
+		data.forEach((item) => (item.photo = `https://kindergarten-back.herokuapp.com/news/photo/${item._id}`));
 		dispatch({
 			type: GET_ALL_NEWS,
 			payload: data,
