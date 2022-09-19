@@ -25,8 +25,8 @@ const MainSwitch = () => {
 				<Route exact path="/pliki-cookie" element={<Cookies />} />
 				<Route exact path="/dokumenty" element={<Documents />} />
 				<Route exact path="/ogloszenia" element={<InfoViev />} />
-				<Route exact path="/patronka" element={<Patroness />} />
 				<Route exact path="/aktualnosci" element={<NewsViev />} />
+				<Route exact path="/patronka" element={<Patroness />} />
 				<Route exact path="/" element={<StartViev />} />
 				<Route exact path="/sukcesy" element={<Success />} />
 				<Route exact path="/sukcesy-element" element={<SuccessPicViev />} />

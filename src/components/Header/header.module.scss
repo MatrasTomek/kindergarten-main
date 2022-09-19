@@ -8,8 +8,9 @@
     width: 95vw;
     height: 70px;
     background-color: $firstColor;
-    opacity: 0.87;
+    opacity: 0.9;
     border-radius: $box-radius;
+    box-shadow: $box-schaddow;
     z-index: 100;
 
     .inside {

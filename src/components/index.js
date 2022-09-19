@@ -16,6 +16,7 @@ export { default as Menu } from "./Menu";
 export { default as Modal } from "./Modal";
 export { NewsItem, NewsViev } from "./News";
 export { default as Patroness } from "./Patroness";
+export { default as RodoBanner } from "./RodoBanner";
 export { default as Spinner } from "./Spinner";
 export { default as StartViev } from "./StartViev";
 export { Success, SuccessItem } from "./Success";

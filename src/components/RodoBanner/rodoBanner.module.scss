@@ -1,0 +1,86 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    width: 260px;
+    height: 380px;
+    background-color: $firstColor;
+    border-radius: $box-radius;
+    padding: 20px;
+    box-shadow: $box-schaddow;
+
+    .inside {
+        color: $secondColor;
+
+        .content {
+            p {
+                text-align: center;
+                font-size: $xs-fz/1.1;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            button {
+                @include standardButtonNoTransform;
+                background-color: $secondColor;
+                color: $firstColor;
+
+                &:hover {
+                    color: $secondColor;
+                    background-color: $thirdColor;
+                }
+
+            }
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                color: $secondColor;
+                transition: $transition;
+                font-size: $xs-fz;
+
+                &:hover {
+                    color: $thirdColor;
+                }
+            }
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        width: 420px;
+        height: 270px;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        width: 400px;
+        height: 300px;
+
+        .inside {
+
+            .content {
+                p {
+                    font-size: $xs-fz;
+                }
+            }
+
+            .links {
+                a {
+                    font-size: $s-fz;
+                }
+            }
+
+        }
+    }
+}
