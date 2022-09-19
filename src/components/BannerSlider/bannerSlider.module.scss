@@ -50,7 +50,7 @@
             position: absolute;
             left: 20%;
             top: 60%;
-            opacity: 0;
+            // opacity: 0;
             transition: 3s;
 
             // animation: contentShow 7s infinite;
@@ -83,7 +83,7 @@
             height: 10px;
             background-color: $secondColor;
             border-radius: $box-radius;
-            transition: 1s;
+            transition: 3s;
             cursor: pointer;
         }
     }
