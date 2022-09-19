@@ -3,6 +3,7 @@ import {
 	AboutUs,
 	Cadre,
 	Contact,
+	Cookies,
 	Documents,
 	InfoViev,
 	NewsViev,
@@ -20,6 +21,7 @@ const MainSwitch = () => {
 				<Route exact path="/onas" element={<AboutUs />} />
 				<Route exact path="/kadra" element={<Cadre />} />
 				<Route exact path="/kontakt" element={<Contact />} />
+				<Route exact path="/pliki-cookie" element={<Cookies />} />
 				<Route exact path="/dokumenty" element={<Documents />} />
 				<Route exact path="/ogloszenia" element={<InfoViev />} />
 				<Route exact path="/patronka" element={<Patroness />} />

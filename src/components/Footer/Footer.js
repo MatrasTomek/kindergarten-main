@@ -36,7 +36,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className={styles.politics}>
-					<Link to="/cookies">Ciasteczka</Link>
+					<Link to="/pliki-cookie">Ciasteczka</Link>
 					<Link to="/rodo">Polityka Rodo</Link>
 				</div>
 				<div className={styles.copyrights}>
