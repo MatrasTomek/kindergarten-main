@@ -9,6 +9,7 @@ export { default as Documents } from "./Documents";
 export { default as Footer } from "./Footer";
 export { default as Header } from "./Header";
 export { default as InfoViev } from "./Informations";
+export { default as ImportantBox } from "./ImportantBox";
 export { default as MainSwitch } from "./MainSwitch";
 export { default as Maps } from "./Maps";
 export { default as Menu } from "./Menu";

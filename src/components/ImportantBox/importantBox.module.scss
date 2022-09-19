@@ -1,0 +1,106 @@
+@import "../../RootStyles/common.scss";
+
+.wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    z-index: 100;
+    border: 2px solid $firstColor;
+    border-radius: $box-radius;
+    background-color: $secondColor;
+
+    .inside {
+
+        .info {
+
+
+            h2,
+            p {
+                color: $firstColor;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .date {
+                color: $thirdColor;
+                text-align: left;
+                font-size: $xs-fz/1.2;
+            }
+
+            .content {
+                text-align: center;
+                font-size: $xs-fz;
+            }
+
+            .sign {
+                text-align: right;
+                font-size: $xs-fz;
+                font-style: italic;
+            }
+        }
+    }
+
+    .button {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            @include standardButtonNoTransform;
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        width: 70%;
+
+        .inside {
+
+            .info {
+
+
+                .date {
+
+                    font-size: $s-fz;
+                }
+
+                .content,
+                .sign {
+
+                    font-size: $m-fz;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        width: 50%;
+
+    }
+
+    @media screen and (min-width:map-get($breakpoints, x-large)) {
+
+
+        .inside {
+
+            .info {
+
+
+                .date {
+
+                    font-size: $s-fz;
+                }
+
+                .content,
+                .sign {
+
+                    font-size: $l-fz;
+                }
+            }
+        }
+    }
+
+}
