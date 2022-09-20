@@ -2,7 +2,7 @@ export const SUCCESS_ITEMS = [
 	{
 		id: "success3",
 		date: "28.08.2022",
-		title: "Występ na pikniku parafialnym",
+		title: "Występ na Pikniku Parafialnym",
 		content1: "",
 		signature: "",
 		imagePath: "images/wystepPiknik2022",
@@ -20,7 +20,7 @@ export const SUCCESS_ITEMS = [
 	{
 		id: "success1",
 		date: "2021",
-		title: "Pielgrzymowanie przedszkolaków do św. Szczapana w Szczepanowie",
+		title: "Pielgrzymowanie Przedszkolaków do św. Stanisława w Szczepanowie",
 		content1: "",
 		signature: "",
 		imagePath: "images/szczepanow2021",

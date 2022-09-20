@@ -54,7 +54,7 @@ const Patroness = () => {
 					okolicznej ludności, która z wielkim przekonaniem mówiła, że uczestniczy w pogrzebie męczennicy.
 					Pochowano ją w parafialnym kościele we wsi Zabawa. W 1987 r. Papież Jan Paweł II w Tarnowie
 					beatyfikował Karolinę. Stała się patronką Ruchu Czystych Serc. Jest patronką diecezji rzeszowskiej,
-					a także Katolickiego Stowarzyszenia Młodzieży oraz od 1.10.1990 roku Patronką Naszego Publicznego
+					a także Katolickiego Stowarzyszenia Młodzieży, a od 01.10.1990 roku Patronką Naszego Publicznego
 					Przedszkola Parafialnego w Mokrzyskach.
 				</p>
 				<div className={styles.picturesItemsMany}>
