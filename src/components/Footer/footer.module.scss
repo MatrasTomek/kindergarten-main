@@ -77,6 +77,17 @@
                     }
                 }
             }
+
+            .contact {
+                a {
+                    transition: $transition;
+
+
+                    &:hover {
+                        color: $secondColor;
+                    }
+                }
+            }
         }
     }
 

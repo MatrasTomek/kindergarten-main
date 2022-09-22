@@ -26,7 +26,9 @@ const Footer = () => {
 							<p>{name}</p>
 							<p>{adress}</p>
 							<p>{phone}</p>
-							<p>{mail}</p>
+							<a href={`mailto:${mail}`} target="blank">
+								{mail}
+							</a>
 						</div>
 						<div className={styles.socials}>
 							<a href="https://www.facebook.com/przedszkolemokrzyska/" target="blank">

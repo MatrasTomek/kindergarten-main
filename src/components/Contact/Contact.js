@@ -74,7 +74,9 @@ const Contact = () => {
 				<p>{CONTACT.name}</p>
 				<p>{CONTACT.adress}</p>
 				<p>Telefon: {CONTACT.phone}</p>
-				<p>Mail: {CONTACT.mail}</p>
+				<a href={`mailto:${mail}`} target="blank">
+					{CONTACT.mail}
+				</a>
 				<div className={styles.maps}>
 					<Maps />
 				</div>

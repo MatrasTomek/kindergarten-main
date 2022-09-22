@@ -22,10 +22,19 @@
             color: $firstColor;
         }
 
-        p {
+        p,
+        a {
             font-size: $xs-fz;
             margin-bottom: 10px;
+            color: black
+        }
 
+        a {
+            transition: $transition;
+
+            &:hover {
+                color: $thirdColor
+            }
         }
 
         .maps {
@@ -176,7 +185,8 @@
 
             }
 
-            p {
+            p,
+            a {
                 font-size: $s-fz;
             }
 
@@ -223,7 +233,8 @@
 
             }
 
-            p {
+            p,
+            a {
                 font-size: $m-fz;
             }
 
@@ -270,7 +281,8 @@
 
             }
 
-            p {
+            p,
+            a {
                 font-size: $l-fz;
 
             }
