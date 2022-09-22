@@ -3,6 +3,8 @@ import { Button, Maps } from "../../components";
 import { CONTACT } from "../../content";
 import styles from "./contact.module.scss";
 
+const FORM_SEND = process.env.REACT_APP_FORM_ACTION;
+
 const Contact = () => {
 	const [name, setName] = useState("");
 	const [mail, setMail] = useState("");
@@ -29,7 +31,6 @@ const Contact = () => {
 
 	const handleOnSubmit = (e) => {
 		e.preventDefault();
-
 		if (name === "" || mail === "" || !rodo) {
 			seErrorInfo("Wymagane pola muszą być wypełnione");
 			setTimeout(() => {
@@ -38,21 +39,28 @@ const Contact = () => {
 
 			return;
 		} else {
-			const mailData = {
-				name,
-				mail,
-				title,
-				content,
-				rodo,
-			};
-
+			const form = e.target;
+			const data = new FormData(form);
+			const xhr = new XMLHttpRequest();
+			xhr.open(form.method, form.action);
+			xhr.setRequestHeader("Accept", "application/json");
 			setName("");
 			setMail("");
 			setTitle("");
 			setContent("");
 			setRodo(false);
+			xhr.onreadystatechange = () => {
+				if (xhr.readyState !== XMLHttpRequest.DONE) return;
+				if (xhr.status === 200) {
+					form.reset();
+					seErrorInfo("Twój mail został wysłany");
+				} else {
+					seErrorInfo("Przepraszamy błąd po stronie serwera - spróbuj jeszcze raz.");
+				}
+			};
+			xhr.send(data);
 		}
-		seErrorInfo("Twój mail został wysłany");
+
 		setTimeout(() => {
 			seErrorInfo("");
 		}, [3500]);
@@ -71,29 +79,35 @@ const Contact = () => {
 					<Maps />
 				</div>
 				<div className={styles.form}>
-					<form onSubmit={handleOnSubmit}>
+					<form onSubmit={handleOnSubmit} action={`${FORM_SEND}`} method="POST">
 						<div>
 							<span>Imię i nazwisko (wymagane)</span>
-							<input type="text" value={name} onChange={handleChangeOnName} />
+							<input type="text" name="Imie_i_Nazwisko:" value={name} onChange={handleChangeOnName} />
 						</div>
 
 						<div>
 							<span>Adres email (wymagane)</span>
-							<input type="text" value={mail} onChange={handleChangeOnMail} />
+							<input type="text" name="Adres_eMail:" value={mail} onChange={handleChangeOnMail} />
 						</div>
 						<div>
 							<span>Temat</span>
-							<input type="text" value={title} onChange={handleChangeOnTitle} />
+							<input type="text" name="Temat:" value={title} onChange={handleChangeOnTitle} />
 						</div>
 						<div>
 							<span>Treść wiadomości</span>
-							<textarea value={content} onChange={handleChangeOnContent} rows="10" />
+							<textarea
+								name="Tresc_wiadomosci:"
+								value={content}
+								onChange={handleChangeOnContent}
+								rows="10"
+							/>
 						</div>
 						<div className={styles.checkbox}>
 							<label htmlFor="checkedRodo">
 								<input
 									className={styles.input}
 									type="checkbox"
+									name="Rodo_potwierdzone:"
 									// checked={rodo}
 									value={rodo}
 									onChange={handleOnChangeRodo}
