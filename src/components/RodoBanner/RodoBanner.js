@@ -39,7 +39,9 @@ const RodoBanner = () => {
 				</div>
 				<div className={styles.links}>
 					<Link to="/pliki-cookie">Ciasteczka</Link>
-					<Link to="/">Polityka Rodo</Link>
+					<a href="/assets/klauzula.jpg" target="blank">
+						Polityka Rodo
+					</a>
 				</div>
 			</div>
 		</div>

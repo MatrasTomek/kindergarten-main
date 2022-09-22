@@ -12,7 +12,13 @@ const Footer = () => {
 				<div className={styles.components}>
 					<div className={styles.about}>
 						<h3>{about}</h3>
-						<div></div>
+						<div>
+							<p></p>
+							<Link to="/kadra">Nasza Kadra</Link>
+							<Link to="/patronaka">Nasza Patronka</Link>
+							<Link to="/sukcesy">Sukcesy</Link>
+							<Link to="/dokumenty">Dokumenty</Link>
+						</div>
 					</div>
 					<div className={styles.contact}>
 						<h3>{contact}</h3>
@@ -37,7 +43,9 @@ const Footer = () => {
 				</div>
 				<div className={styles.politics}>
 					<Link to="/pliki-cookie">Ciasteczka</Link>
-					<Link to="/rodo">Polityka Rodo</Link>
+					<a href="/assets/klauzula.jpg" target="blank">
+						Polityka Rodo
+					</a>
 				</div>
 				<div className={styles.copyrights}>
 					<p>&copy; 2022 Przedszkole Parafialne w Mokrzyskach</p>
