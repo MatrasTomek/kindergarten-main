@@ -15,7 +15,7 @@ const Footer = () => {
 						<div>
 							<p></p>
 							<Link to="/kadra">Nasza Kadra</Link>
-							<Link to="/patronaka">Nasza Patronka</Link>
+							<Link to="/patronka">Nasza Patronka</Link>
 							<Link to="/sukcesy">Sukcesy</Link>
 							<Link to="/dokumenty">Dokumenty</Link>
 						</div>
@@ -40,7 +40,18 @@ const Footer = () => {
 					</div>
 					<div className={styles.education}>
 						<h3>{education}</h3>
-						<div></div>
+						<div>
+							<p>
+								Od IX 2021 wdrożono aplikacje elektroniczną JAMMIK-przeznaczoną do ewidencji pobytu
+								dzieci w Przedszkolu.
+							</p>
+							<a href="https://www.jammik.pl/" target="blanc">
+								JAMMIK
+							</a>
+							<a href="https://www.jammik.pl/index.php?ram=logowanie" target="blanc">
+								Logowanie
+							</a>
+						</div>
 					</div>
 				</div>
 				<div className={styles.politics}>

@@ -15,17 +15,19 @@
         .components {
             width: 100%;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+            // align-items: center;
 
             .about,
             .contact,
             .education {
-                flex-basis: 30%;
+                flex-basis: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
-                height: 380px;
+                margin-bottom: 20px;
+                // height: 380px;
 
                 h3 {
                     flex-basis: 10%;
@@ -88,6 +90,21 @@
                     }
                 }
             }
+
+            .education {
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        transition: $transition;
+
+                        &:hover {
+                            color: $secondColor;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -137,11 +154,12 @@
     @media screen and (orientation: landscape) {
         .inside {
             .components {
+                justify-content: space-around;
 
                 .about,
                 .contact,
                 .education {
-                    height: 320px;
+                    flex-basis: 45%;
                 }
             }
         }
@@ -151,10 +169,12 @@
 
         .inside {
             .components {
+                justify-content: space-between;
 
                 .about,
                 .contact,
                 .education {
+
                     div {
 
                         p,
@@ -162,6 +182,8 @@
                             font-size: $s-fz;
                         }
                     }
+
+
 
                     .socials {
                         a {
@@ -172,8 +194,20 @@
                         }
                     }
                 }
+
+                .about,
+                .education {
+                    flex-basis: 20%;
+                }
+
+                .contact {
+                    flex-basis: 35%;
+                }
+
             }
         }
+
+
 
         .politics,
         .copyrights {
