@@ -22,10 +22,23 @@
 
 
         .logo {
-            flex-basis: 40%;
+            width: 50px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
+            // background-image: url('../../assets/img/startViev/szylod-logo.jpg');
+            // background-size: contain;
+            // background-repeat: no-repeat;
+            // background-position: center;
+            border-radius: $box-radius;
+            margin-left: 15px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: $box-radius;
+            }
         }
 
         .menu {
@@ -40,11 +53,28 @@
         }
     }
 
-    @media screen and (min-width:map-get($breakpoints, large)) {
+
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        height: 80px;
+
         .inside {
 
             .logo {
-                flex-basis: 30%;
+                width: 90px;
+                height: 65px;
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, large)) {
+        height: 90px;
+
+        .inside {
+
+            .logo {
+                width: 110px;
+                height: 75px;
             }
 
             .menu {
@@ -61,7 +91,8 @@
         .inside {
 
             .logo {
-                flex-basis: 30%;
+                width: 110px;
+
             }
 
             .menu {

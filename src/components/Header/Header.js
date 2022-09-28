@@ -7,7 +7,9 @@ const Header = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.inside}>
-				<div className={styles.logo}>LOGO / NAZWA</div>
+				<div className={styles.logo}>
+					<img src="images/banner/szylod-logo.jpg" alt="logo przedszkola" />
+				</div>
 				<div className={styles.menu}>
 					<Menu />
 				</div>
