@@ -376,7 +376,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>Ks. Stanisław Tokarski</th>
-								<td>2021 - </td>
+								<td>2022 - </td>
 							</tr>
 							<tr>
 								<th>P. Luiza Biel</th>

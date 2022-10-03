@@ -39,7 +39,7 @@ const RodoBanner = () => {
 				</div>
 				<div className={styles.links}>
 					<Link to="/pliki-cookie">Ciasteczka</Link>
-					<a href="/assets/klauzula.jpg" target="blank">
+					<a href="/klauzula.jpg" target="blank">
 						Polityka Rodo
 					</a>
 				</div>

@@ -56,12 +56,12 @@ const Footer = () => {
 				</div>
 				<div className={styles.politics}>
 					<Link to="/pliki-cookie">Ciasteczka</Link>
-					<a href="/assets/klauzula.jpg" target="blank">
+					<a href="/klauzula.jpg" target="blank">
 						Polityka Rodo
 					</a>
 				</div>
 				<div className={styles.copyrights}>
-					<p>&copy; 2022 Przedszkole Parafialne w Mokrzyskach</p>
+					<p>&copy; 2022 Publiczne Przedszkole Parafialne w Mokrzyskach</p>
 
 					<a href="https://www.developerweb.pl/" target="blanc">
 						{" "}

@@ -116,8 +116,11 @@ const Contact = () => {
 									id="checkedRodo"
 								/>
 								<span>
-									Zapoznałem się z polityką <a href="/">RODO</a> i wyrażam zgodę na przetwarzanie
-									danych
+									Zapoznałem się z polityką{" "}
+									<a href="/klauzula.jpg" target="blank">
+										RODO
+									</a>{" "}
+									i wyrażam zgodę na przetwarzanie danych
 								</span>
 							</label>
 						</div>
