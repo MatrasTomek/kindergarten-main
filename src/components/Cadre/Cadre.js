@@ -62,7 +62,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>Pedagog</th>
-								<td>mgr Beata Gicala</td>
+								<td>mgr Zuzanna Magiera</td>
 							</tr>
 							<tr>
 								<th>Psycholog</th>
@@ -392,6 +392,10 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>P. Beata Gicala</th>
+								<td>2022 - 2022</td>
+							</tr>
+							<tr>
+								<th>P. Zuzanna Magiera</th>
 								<td>2022 - </td>
 							</tr>
 						</tbody>

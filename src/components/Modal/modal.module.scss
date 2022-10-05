@@ -48,11 +48,13 @@
       height: 60vh;
 
       @media screen and (orientation: landscape) {
+
+        width: 65vw;
         height: 85vh;
       }
 
       @media screen and (min-width:map-get($breakpoints, x-large)) {
-        width: 70vw;
+        width: 55vw;
       }
     }
 

@@ -1,5 +1,14 @@
 export const SUCCESS_ITEMS = [
 	{
+		id: "success4",
+		date: "05.10.2022",
+		title: "Baśnie Pana Andersena",
+		content1: "W dniu 05.10.2022r w Brzesku, przedszkolaki uczestniczyli w spektaklu Baśnie Pana Andersena.",
+		signature: "",
+		imagePath: "images/basnieAndersena2022",
+		imgFolderLength: 75,
+	},
+	{
 		id: "success3",
 		date: "28.08.2022",
 		title: "Występ na Pikniku Parafialnym",
