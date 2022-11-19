@@ -1,5 +1,14 @@
 export const SUCCESS_ITEMS = [
 	{
+		id: "success5",
+		date: "18.11.2022",
+		title: "18 XI 2022. Wspomnienie Bł. Karoliny Kózkówny, patronki naszego Przedszkola.",
+		content1: "",
+		signature: "",
+		imagePath: "images/swieto_patronki2022",
+		imgFolderLength: 56,
+	},
+	{
 		id: "success4",
 		date: "05.10.2022",
 		title: "Baśnie Pana Andersena",

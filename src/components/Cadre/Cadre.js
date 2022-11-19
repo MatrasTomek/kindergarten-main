@@ -13,6 +13,10 @@ const Cadre = () => {
 					</p>
 					<p>Parafia Rzymskokatolicka w Mokrzyskach – Proboszcz ks. mgr Stanisław Tokarski</p>
 				</div>
+				<div className={styles.pictureItem1}>
+					<img src="images/kadra/groni_i_prac.jpg" alt="grono ped. i pracownicy" />
+					<p>Grono pedagogiczne i pracownicy</p>
+				</div>
 				<div className={styles.table}>
 					<table>
 						<tbody>
@@ -72,7 +76,8 @@ const Cadre = () => {
 					</table>
 				</div>
 				<div className={styles.pictureItem1}>
-					<img src="images/kadra/kadra1.jpg" alt="kadra przedszkola" />
+					<img src="/images/kadra/grono.jpg" alt="kadra przedszkola" />
+					<p>Grono Pedagogiczne</p>
 				</div>
 				<div className={styles.table}>
 					<table>
@@ -125,7 +130,8 @@ const Cadre = () => {
 					</table>
 				</div>
 				<div className={styles.pictureItem1}>
-					<img src="/images/kadra/kadra2.jpg" alt="kadra przedszkola" />
+					<img src="/images/kadra/prac1.jpg" alt="kadra przedszkola" />
+					<p>Pracownicy</p>
 				</div>
 				<div className={styles.table}>
 					<p>
