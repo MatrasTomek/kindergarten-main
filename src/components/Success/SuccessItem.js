@@ -22,7 +22,7 @@ const SuccessItem = ({ item }) => {
 			<div className={styles.photo} style={{ backgroundImage: `url(${imagePath}/1.jpg)` }}></div>
 			<p className={styles.date}>data: {date}</p>
 			<h3>{title}</h3>
-			<p>{content1}</p>
+			<p>{ content1.substring(0, 120) } . . .</p>
 			<div className={styles.button}>
 				<Button name="zobacz" type="button" onClick={handleOpenSelectedItemsViev} />
 			</div>

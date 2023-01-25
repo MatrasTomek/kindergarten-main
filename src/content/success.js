@@ -1,5 +1,14 @@
 export const SUCCESS_ITEMS = [
 	{
+		id: "success6",
+		date: "21.01.2023",
+		title: "Dzień Babci i Dziadka 2023",
+		content1: "Dzień Babci i Dziadka to wyjątkowa uroczystość. Z tej też okazji 21 stycznia w naszym Kościele Parafialnym w Mokrzyskach została odprawiona Msza święta pod przewodnictwem Ks. Proboszcza, podczas której wspólnie modliliśmy się o zdrowie i błogosławieństwo Boże dla naszych kochanych Dziadków. Po mszy św. Przedszkolaki zaprezentowały krótki program artystyczny, recytując wiersze oraz śpiewając piosenki i najpiękniejsze kolędy i pastorałki. Następnie Ks. Proboszcz wyraził podziękowania wobec małych wykonawców i nauczycieli przygotowujących program muzyczny. Kochanym Babciom i Dziadkom jeszcze raz Dyrekcja i pracownicy przedszkola, na czele z Organem Prowadzącym złożyli życzenia zdrowia, pomyślności i samych pięknych chwil spędzonych ze swoimi wnukami.",
+		signature: "",
+		imagePath: "images/dBabci2023",
+		imgFolderLength: 101,
+	},
+	{
 		id: "success5",
 		date: "18.11.2022",
 		title: "18 XI 2022. Wspomnienie Bł. Karoliny Kózkówny, patronki naszego Przedszkola.",
