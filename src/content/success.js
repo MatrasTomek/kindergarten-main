@@ -1,5 +1,14 @@
 export const SUCCESS_ITEMS = [
 	{
+		id: "success7",
+		date: "28.01.2023",
+		title: "XVIII Przegląd Kolęd i Pastorałek O Muszlę św. Jakuba",
+		content1: "Dnia 28.01.2023 r. w kościele pw. NMP Matki Kościoła i św. Jakuba Apostoła w Brzesku odbył się XVIII Przegląd Kolęd i Pastorałek O Muszlę św. Jakuba .Miło nam poinformować,  że najstarsza grupa z naszego przedszkola 'Przyjaciele Jezuska' pod opieką Pana Andrzeja Gicali zdobyły zaszczytne III miejsce. Gratulujemy naszym milusińskim i ich rodzicom oraz życzymy dalszych sukcesów.",
+		signature: "",
+		imagePath: "images/przegladKoled",
+		imgFolderLength: 9,
+	},
+	{
 		id: "success6",
 		date: "21.01.2023",
 		title: "Dzień Babci i Dziadka 2023",

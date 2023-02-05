@@ -66,7 +66,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>Pedagog</th>
-								<td>mgr Zuzanna Magiera</td>
+								<td>mgr Gabriela Magiera-Kania</td>
 							</tr>
 							<tr>
 								<th>Psycholog</th>
@@ -402,7 +402,11 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>P. Zuzanna Magiera</th>
-								<td>2022 - </td>
+								<td>01.09.2022 - 30.11.2022</td>
+							</tr>
+							<tr>
+								<th>P. Gabriela Magiera-Kania</th>
+								<td>01.12.2022 - </td>
 							</tr>
 						</tbody>
 					</table>

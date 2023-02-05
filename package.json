@@ -44,6 +44,6 @@
   },
   "devDependencies": {
     "bem-css-modules": "^1.4.3",
-    "node-sass": "^7.0.1"
+    "sass": "^1.57.1"
   }
 }
