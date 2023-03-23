@@ -6,28 +6,35 @@ import { Button } from "../../components";
 import styles from "./successItem.module.scss";
 
 const SuccessItem = ({ item }) => {
-	const { imagePath, title, date, content1 } = item;
+  const { imagePath, title, date, content1 } = item;
 
-	const navigate = useNavigate();
-	const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-	const handleOpenSelectedItemsViev = () => {
-		dispatch(delPicItem());
-		dispatch(setPicItem(item));
-		navigate("/sukcesy-element");
-	};
+  const handleOpenSelectedItemsViev = () => {
+    dispatch(delPicItem());
+    dispatch(setPicItem(item));
+    navigate("/sukcesy-element");
+  };
 
-	return (
-		<div className={styles.wrapper}>
-			<div className={styles.photo} style={{ backgroundImage: `url(${imagePath}/1.jpg)` }}></div>
-			<p className={styles.date}>data: {date}</p>
-			<h3>{title}</h3>
-			<p>{ content1.substring(0, 120) } . . .</p>
-			<div className={styles.button}>
-				<Button name="zobacz" type="button" onClick={handleOpenSelectedItemsViev} />
-			</div>
-		</div>
-	);
+  return (
+    <div className={styles.wrapper}>
+      <div
+        className={styles.photo}
+        style={{ backgroundImage: `url(${imagePath}/3.jpg)` }}
+      ></div>
+      <p className={styles.date}>data: {date}</p>
+      <h3>{title}</h3>
+      <p>{content1.substring(0, 120)} . . .</p>
+      <div className={styles.button}>
+        <Button
+          name="zobacz"
+          type="button"
+          onClick={handleOpenSelectedItemsViev}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default React.memo(SuccessItem);
