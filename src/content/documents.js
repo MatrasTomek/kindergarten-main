@@ -67,4 +67,9 @@ export const DOCS_ABOUT_RECRUITMENT = [
     name: "Karta zgłoszenia rok 2023-2024 [PDF]",
     path: "KARTA-DO-ZAPISU-DZIECKA-DO-PRZEDSZKOLA.pdf",
   },
+  {
+    id: "schedule-card",
+    name: "Harmonogram czynności w postępowaniu rekrutacyjnym [PDF]",
+    path: "Harmonogram_czynności_w_postępowaniu_rekrutacyjnym_oraz_postępowaniu_uzupełniającym.pdf",
+  },
 ];
