@@ -1,5 +1,15 @@
 export const SUCCESS_ITEMS = [
   {
+    id: "success9",
+    date: "31.03.2023",
+    title: "Rekolekcje Wielkopostne dla naszych Maluchów",
+    content1:
+      "W dniu 31 marca br., odbyły się Rekolekcje Wielkopostne dla naszych Maluchów z Przedszkola, które prowadził ks. Sylwester Brzeżny.",
+    signature: "",
+    imagePath: "images/rekolekcje_wlp_2023",
+    imgFolderLength: 22,
+  },
+  {
     id: "success8",
     date: "21.03.2023",
     title: "Otwarcie i Poświęcenie nowego urządzenia na placu zabaw",

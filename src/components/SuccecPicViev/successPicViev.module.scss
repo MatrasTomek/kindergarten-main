@@ -1,155 +1,142 @@
 @import "../../RootStyles/common.scss";
 
 .wrapper {
-    @include wrapper;
+  @include wrapper;
 
-    .banner {
+  .banner {
+    width: 100%;
+    height: 35vh;
+    background-image: url("../../assets/img/bannersInVievs/giraffe-1959110_640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .inside {
+    @include inside;
+
+    .errInfo {
+      text-align: center;
+      font-weight: 700;
+      color: $firstColor;
+    }
+
+    h2 {
+      font-size: $l-fz;
+      margin-bottom: 20px;
+      color: $firstColor;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .picturesViev {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      img {
         width: 100%;
-        height: 35vh;
-        background-image: url('../../assets/img/bannersInVievs/giraffe-1959110_640.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 260px;
+        margin-bottom: 10px;
+        border: $border-first;
+        border-radius: $box-radius;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (orientation: landscape) {
+    .banner {
+      height: 65vh;
     }
 
     .inside {
-        @include inside;
+      .picturesViev {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
 
-        .errInfo {
-            text-align: center;
-            font-weight: 700;
-            color: $firstColor
+        img {
+          width: 45%;
+          margin-bottom: 20px;
         }
+      }
+    }
+  }
 
-        h2 {
-            font-size: $l-fz;
-            margin-bottom: 20px;
-            color: $firstColor;
-        }
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .picturesViev {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-
-            img {
-                width: 100%;
-                height: 180px;
-                margin-bottom: 10px;
-                border: $border-first;
-                border-radius: $box-radius;
-                cursor: pointer;
-            }
-        }
+  @media screen and (min-width: map-get($breakpoints, small)) {
+    .banner {
+      height: 65vh;
     }
 
-    @media screen and (orientation: landscape) {
-        .banner {
+    .inside {
+      .picturesViev {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
 
-            height: 65vh;
+        img {
+          width: 45%;
+          margin-bottom: 20px;
         }
+      }
+    }
+  }
 
-        .inside {
-            .picturesViev {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: center;
-
-                img {
-                    width: 45%;
-                    margin-bottom: 20px;
-                }
-            }
-        }
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    .banner {
+      height: 50vh;
     }
 
-    @media screen and (min-width:map-get($breakpoints, small)) {
-        .banner {
+    .inside {
+      h2 {
+        font-size: $xl-fz;
+      }
+    }
+  }
 
-            height: 65vh;
-        }
-
-        .inside {
-            .picturesViev {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: center;
-
-                img {
-                    width: 45%;
-                    margin-bottom: 20px;
-                }
-            }
-        }
+  @media screen and (min-width: map-get($breakpoints, large)) {
+    .banner {
+      background-image: url("../../assets/img/bannersInVievs/giraffe-1959110.jpg");
     }
 
-    @media screen and (min-width:map-get($breakpoints, medium)) {
-        .banner {
-            height: 50vh;
-        }
+    .inside {
+      h2 {
+        font-size: $xl-fz * 1.2;
+      }
 
-        .inside {
-            h2 {
-                font-size: $xl-fz;
-
-            }
+      .picturesViev {
+        img {
+          width: 40%;
+          height: 260px;
         }
+      }
+    }
+  }
+
+  @media screen and (min-width: map-get($breakpoints, x-large)) {
+    .banner {
+      height: 60vh;
     }
 
-    @media screen and (min-width:map-get($breakpoints, large)) {
-        .banner {
-            background-image: url('../../assets/img/bannersInVievs/giraffe-1959110.jpg');
+    .inside {
+      h2 {
+        font-size: $xl-fz * 1.4;
+      }
+
+      .picturesViev {
+        img {
+          width: 33%;
+          height: 360px;
         }
-
-        .inside {
-            h2 {
-                font-size: $xl-fz*1.2;
-
-            }
-
-
-            .picturesViev {
-
-
-                img {
-                    width: 40%;
-                    height: 200px;
-                }
-
-            }
-        }
+      }
     }
-
-    @media screen and (min-width:map-get($breakpoints, x-large)) {
-        .banner {
-            height: 60vh;
-        }
-
-        .inside {
-
-            h2 {
-                font-size: $xl-fz*1.4;
-
-            }
-
-            .picturesViev {
-
-
-                img {
-                    width: 33%;
-                    height: 260px;
-                }
-
-            }
-        }
-    }
+  }
 }

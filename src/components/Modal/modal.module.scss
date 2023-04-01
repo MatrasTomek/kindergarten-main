@@ -11,7 +11,6 @@
   backdrop-filter: blur(2px);
 
   .wrapper {
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,8 +22,6 @@
     background-color: white;
     color: black;
     border-radius: 5px;
-
-
 
     svg {
       position: absolute;
@@ -40,23 +37,21 @@
         fill: $secondColor;
         background-color: $firstColor;
       }
-
     }
 
     img {
+      display: block;
       width: 85vw;
-      height: 60vh;
+      height: auto;
+      max-height: 95vh;
 
       @media screen and (orientation: landscape) {
-
-        width: 65vw;
-        height: 85vh;
+        width: 50vw;
       }
 
-      @media screen and (min-width:map-get($breakpoints, x-large)) {
-        width: 55vw;
+      @media screen and (min-width: map-get($breakpoints, x-large)) {
+        width: 50vw;
       }
     }
-
   }
 }
