@@ -25,20 +25,12 @@ const Cadre = () => {
 								<td>mgr Ewa Tomana</td>
 							</tr>
 							<tr>
-								<th>Kadra Pedagogiczna</th>
-								<td>mgr Maria Turlej</td>
-							</tr>
-							<tr>
 								<th></th>
 								<td>mgr Klaudia Węgrzyn</td>
 							</tr>
 							<tr>
 								<th></th>
 								<td>mgr Anna Chmielarz</td>
-							</tr>
-							<tr>
-								<th></th>
-								<td>mgr Joanna Kazek</td>
 							</tr>
 							<tr>
 								<th></th>
@@ -49,9 +41,15 @@ const Cadre = () => {
 								<td>mgr Luiza Biel</td>
 							</tr>
 							<tr>
-								<th>Katecheta</th>
+								<th></th>
+								<td>mgr Paulina Jarosz</td>
+							</tr>
+							<tr>
+								<th>Katecheci</th>
 								<td>ks. mgr Stanisław Tokarski</td>
 							</tr>
+							<tr><th></th>
+						<td>mgr Teresa Libera</td></tr>
 							<tr>
 								<th>J. angielski</th>
 								<td>mgr Emilia Niemiec</td>
@@ -66,7 +64,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>Pedagog</th>
-								<td>mgr Gabriela Magiera-Kania</td>
+								<td>mgr Luiza Biel</td>
 							</tr>
 							<tr>
 								<th>Psycholog</th>
@@ -125,6 +123,10 @@ const Cadre = () => {
 							<tr>
 								<th>{""}</th>
 								<td>P. Paulina Biedak</td>
+							</tr>
+							<tr>
+								<th>Konserwator</th>
+								<td>Wojciech Oleksyk</td>
 							</tr>
 						</tbody>
 					</table>
@@ -244,7 +246,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>P. Maria Turlej</th>
-								<td> 1995 –</td>
+								<td> 1995 – 2023</td>
 							</tr>
 							<tr>
 								<th>P. Cecylia Kuciel</th>
@@ -390,7 +392,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>P. Joanna Kazek</th>
-								<td>2022 - </td>
+								<td>2022 - 2023</td>
 							</tr>
 							<tr>
 								<th>P. Emilia Niemiec</th>
@@ -406,7 +408,19 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>P. Gabriela Magiera-Kania</th>
-								<td>01.12.2022 - </td>
+								<td>01.12.2022 – 30.06.2023</td>
+							</tr>
+							<tr>
+								<th>P. Teresa Libera</th>
+								<td>2023 - </td>
+							</tr>
+							<tr>
+								<th>Jarosz Paulina</th>
+								<td>2023 - </td>
+							</tr>
+							<tr>
+								<th>P. Oleksyk Wojciech </th>
+								<td>2023 - </td>
 							</tr>
 						</tbody>
 					</table>

@@ -1,5 +1,15 @@
 export const SUCCESS_ITEMS = [
   {
+    id: "success10",
+    date: "03.04.2023",
+    title: "Konkurs na najpiękniejszy 'Stroik wielkanocny' rozstrzygnięty",
+    content1:
+      " W konkursie wzięło udział 39 dzieci z naszego przedszkola, które z pomocą swoich rodziców i dziadków wykonały piękne i pomysłowe prace. Za niezwykłą kreatywność i serce włożone w wykonanie stroików, wszystkie dzieci zostały wyróżnione otrzymując dyplomy i nagrody rzeczowe. Gratulacje 👏👏👏 Stroiki zostały przekazane na świąteczny kiermasz, który został zorganizowany po wczorajszej mszy świętej pod naszym parafialnym kościołem. Udało się zebrać 1700 zł 🙂🙂🙂 Pieniążki te zostaną przekazane na dofinansowanie pikniku rodzinnego, który odbędzie się w czerwcu 🥰 Składamy ogromne podziękowania rodzicom, dziadkom i wszystkim, którzy zakupili stroiki a dzieciom jeszcze raz gratulujemy 👏",
+    signature: "",
+    imagePath: "images/stolik_wlk_2023",
+    imgFolderLength: 14,
+  },
+  {
     id: "success9",
     date: "31.03.2023",
     title: "Rekolekcje Wielkopostne dla naszych Maluchów",
