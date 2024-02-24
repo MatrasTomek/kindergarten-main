@@ -126,7 +126,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>Konserwator</th>
-								<td>Wojciech Oleksyk</td>
+								<td>P. lic. Wojciech Oleksyk</td>
 							</tr>
 						</tbody>
 					</table>
@@ -415,7 +415,7 @@ const Cadre = () => {
 								<td>2023 - </td>
 							</tr>
 							<tr>
-								<th>Jarosz Paulina</th>
+								<th>P. Jarosz Paulina</th>
 								<td>2023 - </td>
 							</tr>
 							<tr>

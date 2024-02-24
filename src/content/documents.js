@@ -15,13 +15,8 @@ export const DOCS_ABOUT_KINDERGARTEN = [
     path: "KONCEPCJA.pdf",
   },
   {
-    id: "procedures",
-    name: "Procedury [PDF]",
-    path: "PROCEDURY.pdf",
-  },
-  {
     id: "procedures-new",
-    name: "Procedury [PDF] ważne od 01.06.2019",
+    name: "Procedury obowiązujące w przedszkolu",
     path: "PROCEDURY_1.pdf",
   },
   {
@@ -49,11 +44,6 @@ export const DOCS_ABOUT_KINDERGARTEN = [
     name: "Projekt – „Miś w świecie literatury” [PDF]",
     path: "MALYMIS1.pdf",
   },
-  {
-    id: "schedule",
-    name: "Ramowy rozkład dnia [PDF]",
-    path: "RAMOWY_ROZKLAD.pdf",
-  },
 ];
 
 export const DOCS_ABOUT_RECRUITMENT = [
@@ -64,7 +54,7 @@ export const DOCS_ABOUT_RECRUITMENT = [
   },
   {
     id: "registration-card",
-    name: "Karta zgłoszenia rok 2023-2024 [PDF]",
+    name: "Karta zgłoszenia rok 2024-2025 [PDF]",
     path: "KARTA-DO-ZAPISU-DZIECKA-DO-PRZEDSZKOLA.pdf",
   },
   {
