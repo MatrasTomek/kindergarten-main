@@ -4,7 +4,7 @@ export const SUCCESS_ITEMS = [
     date: "21.06.2024",
     title: "Hawajsko-Piracka nocka Przedszkola",
     content1:
-      "W dzniu 28 VI 2024r. Została Poświęcona figura Najświetszego Serca Pana Jezusa przy budynku Przedszkola, po dokonanej renowacji",
+      "",
     signature: "",
     imagePath: "images/noc_2024",
     imgFolderLength: 13,
@@ -14,7 +14,7 @@ export const SUCCESS_ITEMS = [
     date: "28.06.2024",
     title: "Poświęcenie figury Najświetszego Serca Pana Jezusa przy budynku Przedszkola, po dokonanej renowacji",
     content1:
-      "W dzniu 28 VI 2024r. Została Poświęcona figura Najświetszego Serca Pana Jezusa przy budynku Przedszkola, po dokonanej renowacji",
+      "",
     signature: "",
     imagePath: "images/figura_posw_2024",
     imgFolderLength: 10,

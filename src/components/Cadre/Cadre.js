@@ -25,31 +25,37 @@ const Cadre = () => {
 								<td>mgr Ewa Tomana</td>
 							</tr>
 							<tr>
-								<th></th>
+								<th>Nauczyciel</th>
 								<td>mgr Klaudia Węgrzyn</td>
 							</tr>
 							<tr>
-								<th></th>
+								<th>Nauczyciel</th>
 								<td>mgr Anna Chmielarz</td>
 							</tr>
 							<tr>
-								<th></th>
+								<th>Nauczyciel</th>
 								<td>mgr Emilia Niemiec</td>
 							</tr>
 							<tr>
-								<th></th>
+								<th>Nauczyciel</th>
 								<td>mgr Luiza Biel</td>
 							</tr>
 							<tr>
-								<th></th>
+								<th>Nauczyciel</th>
 								<td>mgr Paulina Jarosz</td>
 							</tr>
 							<tr>
-								<th>Katecheci</th>
-								<td>ks. mgr Stanisław Tokarski</td>
+								<th>Nauczyciel</th>
+								<td>mgr Justyna Fitrzyk</td>
 							</tr>
-							<tr><th></th>
-						<td>mgr Teresa Libera</td></tr>
+							<tr>
+								<th>Nauczyciel</th>
+								<td>mgr Natalia Nabożny-Podolańska</td>
+							</tr>
+							<tr>
+								<th>Katecheta</th>
+								<td>mgr Teresa Libera</td>
+							</tr>
 							<tr>
 								<th>J. angielski</th>
 								<td>mgr Emilia Niemiec</td>
@@ -68,7 +74,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>Psycholog</th>
-								<td>wakat</td>
+								<td>mgr Weronika Wieczorek</td>
 							</tr>
 						</tbody>
 					</table>
@@ -127,6 +133,10 @@ const Cadre = () => {
 							<tr>
 								<th>Konserwator</th>
 								<td>P. lic. Wojciech Oleksyk</td>
+							</tr>
+							<tr>
+								<th>Intendentka</th>
+								<td>P. Małgorzata Bober</td>
 							</tr>
 						</tbody>
 					</table>
@@ -319,7 +329,7 @@ const Cadre = () => {
 								<td>2008 -</td>
 							</tr>
 							<tr>
-								<th>P. Natalia Nabożny</th>
+								<th>P. Natalia Nabożny-Podolańska</th>
 								<td>2009 -</td>
 							</tr>
 							<tr>
@@ -384,7 +394,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>Ks. Stanisław Tokarski</th>
-								<td>2022 - </td>
+								<td>2021 - 2024</td>
 							</tr>
 							<tr>
 								<th>P. Luiza Biel</th>
@@ -421,6 +431,10 @@ const Cadre = () => {
 							<tr>
 								<th>P. Oleksyk Wojciech </th>
 								<td>2023 - </td>
+							</tr>
+							<tr>
+								<th>P. OMałgorzata Bober </th>
+								<td>2024 - </td>
 							</tr>
 						</tbody>
 					</table>
