@@ -50,7 +50,7 @@ const Cadre = () => {
 							</tr>
 							<tr>
 								<th>Nauczyciel</th>
-								<td>mgr Natalia Nabożny-Podolańska</td>
+								<td>mgr Natalia Nabożny</td>
 							</tr>
 							<tr>
 								<th>Katecheta</th>
