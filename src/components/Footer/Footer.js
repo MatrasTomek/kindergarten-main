@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { CONTACT, FOOTER_COMPONENTS } from "../../content";
-import styles from "./footer.module.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { CONTACT, FOOTER_COMPONENTS } from '../../content';
+import styles from './footer.module.scss';
 
 const Footer = () => {
 	const { about, contact, education } = FOOTER_COMPONENTS;
@@ -41,10 +41,7 @@ const Footer = () => {
 					<div className={styles.education}>
 						<h3>{education}</h3>
 						<div>
-							<p>
-								Od IX 2021 wdrożono aplikacje elektroniczną JAMMIK-przeznaczoną do ewidencji pobytu
-								dzieci w Przedszkolu.
-							</p>
+							<p>Od IX 2021 wdrożono aplikacje elektroniczną JAMMIK-przeznaczoną do ewidencji pobytu dzieci w Przedszkolu.</p>
 							<a href="https://www.jammik.pl/" target="blanc">
 								JAMMIK
 							</a>
@@ -61,11 +58,11 @@ const Footer = () => {
 					</a>
 				</div>
 				<div className={styles.copyrights}>
-					<p>&copy; 2023 Publiczne Przedszkole Parafialne w Mokrzyskach</p>
+					<p>&copy; 2025 Publiczne Przedszkole Parafialne w Mokrzyskach</p>
 
 					<a href="https://www.developerweb.pl/" target="blanc">
-						{" "}
-						madeBy: developerweb.pl
+						{' '}
+						madeBy: ND
 					</a>
 				</div>
 			</div>
