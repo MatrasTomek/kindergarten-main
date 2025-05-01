@@ -1,47 +1,30 @@
-import React, { useState } from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
-import MapMarker from "./MapMarker";
+import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
-const containerStyle = {
-	width: "100%",
-	height: "400px",
-};
+const customIcon = new L.Icon({
+	iconUrl: '/images/przedszkole_state.jpg',
+	iconSize: [64, 40],
+	iconAnchor: [16, 40],
+	popupAnchor: [0, -35],
+	shadowUrl: null,
+	shadowSize: null,
+	shadowAnchor: null,
+});
 
-const center = {
-	lat: 50.0048,
-	lng: 20.6154,
-};
+const position = [50.0048, 20.6154];
 
-const MAP_API_KEY = process.env.REACT_APP_API_GOGLE_KEY;
-
-const Maps = () => {
-	const [zoom, setZoom] = useState(15);
-
-	const { isLoaded } = useJsApiLoader({
-		id: "google-map-script",
-		googleMapsApiKey: `${MAP_API_KEY}`,
-	});
-
-	const [map, setMap] = React.useState(null);
-
-	const onLoad = React.useCallback(function callback(map) {
-		// const bounds = new window.google.maps.LatLngBounds(center);
-		// map.fitBounds(bounds);
-		map.setZoom(zoom);
-		setMap(map);
-	}, []);
-
-	const onUnmount = React.useCallback(function callback(map) {
-		setMap(null);
-	}, []);
-
-	return isLoaded ? (
-		<GoogleMap mapContainerStyle={containerStyle} center={center} zoom={zoom} onLoad={onLoad} onUnmount={onUnmount}>
-			<MapMarker setZoom={setZoom} />
-		</GoogleMap>
-	) : (
-		<></>
-	);
-};
+const Maps = () => (
+	<MapContainer center={position} zoom={22} style={{ height: '400px', width: '100%' }}>
+		<TileLayer
+			attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+			url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+		/>
+		<Marker position={position} icon={customIcon}>
+			<Popup>Tutaj jesteśmy!</Popup>
+		</Marker>
+	</MapContainer>
+);
 
 export default React.memo(Maps);
