@@ -1,265 +1,256 @@
-@import "../../RootStyles/common.scss";
+@import '../../RootStyles/common.scss';
 
 .wrapper {
-    @include wrapper;
-    min-height: 250px;
-    background-color: $firstColor;
+	@include wrapper;
+	min-height: 250px;
+	background-color: $firstColor;
 
-    .inside {
-        @include inside;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+	.inside {
+		@include inside;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
-        .components {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            // justify-content: space-between;
-            // align-items: center;
+		.components {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			// justify-content: space-between;
+			// align-items: center;
 
-            .about,
-            .contact,
-            .education {
-                flex-basis: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                margin-bottom: 20px;
-                // height: 380px;
+			.about,
+			.contact,
+			.education {
+				flex-basis: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				margin-bottom: 20px;
+				// height: 380px;
 
-                h3 {
-                    flex-basis: 10%;
-                    color: $secondColor;
-                    margin-bottom: 20px;
-                    text-align: left;
+				h3 {
+					flex-basis: 10%;
+					color: $secondColor;
+					margin-bottom: 20px;
+					text-align: left;
+				}
 
-                }
+				div {
+					flex-basis: 80%;
 
-                div {
-                    flex-basis: 80%;
+					p,
+					a {
+						margin-bottom: 10px;
+						font-size: $xs-fz;
+						font-weight: 700;
+						color: $thirdColor;
+					}
+				}
 
-                    p,
-                    a {
-                        margin-bottom: 10px;
-                        font-size: $xs-fz;
-                        font-weight: 700;
-                        color: $thirdColor;
-                    }
+				.mails {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 1.5rem;
 
-                }
+					span {
+						color: $thirdColor;
+					}
+				}
 
-                .socials {
-                    a {
-                        svg {
-                            fill: $secondColor;
-                            transition: $transition;
+				.socials {
+					a {
+						svg {
+							fill: rgb(255, 255, 255);
+							transition: $transition;
 
-                            &:hover {
-                                fill: $thirdColor;
-                            }
-                        }
-                    }
-                }
+							&:hover {
+								fill: $thirdColor;
+							}
+						}
+					}
+				}
+			}
 
-            }
+			.about {
+				div {
+					display: flex;
+					flex-direction: column;
 
-            .about {
-                div {
-                    display: flex;
-                    flex-direction: column;
+					a {
+						transition: $transition;
 
-                    a {
-                        transition: $transition;
+						&:hover {
+							color: $secondColor;
+						}
+					}
+				}
+			}
 
-                        &:hover {
-                            color: $secondColor;
-                        }
-                    }
-                }
-            }
+			.contact {
+				a {
+					transition: $transition;
 
-            .contact {
-                a {
-                    transition: $transition;
+					&:hover {
+						color: $secondColor;
+					}
+				}
+			}
 
+			.education {
+				div {
+					display: flex;
+					flex-direction: column;
 
-                    &:hover {
-                        color: $secondColor;
-                    }
-                }
-            }
+					a {
+						transition: $transition;
 
-            .education {
-                div {
-                    display: flex;
-                    flex-direction: column;
+						&:hover {
+							color: $secondColor;
+						}
+					}
+				}
+			}
+		}
+	}
 
-                    a {
-                        transition: $transition;
+	.politics {
+		width: 100%;
+		margin: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 
-                        &:hover {
-                            color: $secondColor;
-                        }
-                    }
-                }
-            }
-        }
-    }
+		a {
+			color: $thirdColor;
+			font-size: $xs-fz/1.2;
+			font-weight: 700;
+			transition: $transition;
 
-    .politics {
-        width: 100%;
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+			&:hover {
+				color: $secondColor;
+			}
+		}
+	}
 
-        a {
-            color: $thirdColor;
-            font-size: $xs-fz/1.2;
-            font-weight: 700;
-            transition: $transition;
+	.copyrights {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
-            &:hover {
-                color: $secondColor
-            }
-        }
-    }
+		p,
+		a {
+			color: $thirdColor;
+			font-size: $xs-fz/1.2;
+			font-weight: 700;
+			margin-bottom: 10px;
+			text-align: center;
+		}
 
-    .copyrights {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+		a {
+			transition: $transition;
 
-        p,
-        a {
-            color: $thirdColor;
-            font-size: $xs-fz/1.2;
-            font-weight: 700;
-            margin-bottom: 10px;
-            text-align: center;
-        }
+			&:hover {
+				color: $secondColor;
+			}
+		}
+	}
 
-        a {
-            transition: $transition;
+	@media screen and (orientation: landscape) {
+		.inside {
+			.components {
+				justify-content: space-around;
 
-            &:hover {
-                color: $secondColor
-            }
-        }
-    }
+				.about,
+				.contact,
+				.education {
+					flex-basis: 45%;
+				}
+			}
+		}
+	}
 
-    @media screen and (orientation: landscape) {
-        .inside {
-            .components {
-                justify-content: space-around;
+	@media screen and (min-width: map-get($breakpoints, medium)) {
+		.inside {
+			.components {
+				justify-content: space-between;
 
-                .about,
-                .contact,
-                .education {
-                    flex-basis: 45%;
-                }
-            }
-        }
-    }
+				.about,
+				.contact,
+				.education {
+					div {
+						p,
+						a {
+							font-size: $s-fz;
+						}
+					}
 
-    @media screen and (min-width:map-get($breakpoints, medium)) {
+					.socials {
+						a {
+							svg {
+								width: 28px;
+								height: 28px;
+							}
+						}
+					}
+				}
 
-        .inside {
-            .components {
-                justify-content: space-between;
+				.about,
+				.education {
+					flex-basis: 20%;
+				}
 
-                .about,
-                .contact,
-                .education {
+				.contact {
+					flex-basis: 35%;
+				}
+			}
+		}
 
-                    div {
+		.politics,
+		.copyrights {
+			p,
+			a {
+				font-size: $s-fz/1.2;
+			}
+		}
+	}
 
-                        p,
-                        a {
-                            font-size: $s-fz;
-                        }
-                    }
+	@media screen and (min-width: map-get($breakpoints, x-large)) {
+		.inside {
+			.components {
+				.about,
+				.contact,
+				.education {
+					h3 {
+						font-size: $xl-fz;
+					}
 
+					div {
+						p,
+						a {
+							font-size: $m-fz;
+						}
+					}
 
+					.socials {
+						a {
+							svg {
+								width: 36px;
+								height: 36px;
+							}
+						}
+					}
+				}
+			}
+		}
 
-                    .socials {
-                        a {
-                            svg {
-                                width: 28px;
-                                height: 28px;
-                            }
-                        }
-                    }
-                }
-
-                .about,
-                .education {
-                    flex-basis: 20%;
-                }
-
-                .contact {
-                    flex-basis: 35%;
-                }
-
-            }
-        }
-
-
-
-        .politics,
-        .copyrights {
-
-            p,
-            a {
-                font-size: $s-fz/1.2;
-            }
-        }
-    }
-
-
-
-    @media screen and (min-width:map-get($breakpoints, x-large)) {
-
-        .inside {
-            .components {
-
-                .about,
-                .contact,
-                .education {
-                    h3 {
-                        font-size: $xl-fz;
-                    }
-
-                    div {
-
-                        p,
-                        a {
-                            font-size: $m-fz;
-                        }
-                    }
-
-                    .socials {
-                        a {
-                            svg {
-                                width: 36px;
-                                height: 36px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .politics,
-        .copyrights {
-
-            p,
-            a {
-                font-size: $m-fz/1.2;
-            }
-        }
-    }
+		.politics,
+		.copyrights {
+			p,
+			a {
+				font-size: $m-fz/1.2;
+			}
+		}
+	}
 }

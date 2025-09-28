@@ -5,7 +5,7 @@ import styles from './footer.module.scss';
 
 const Footer = () => {
 	const { about, contact, education } = FOOTER_COMPONENTS;
-	const { name, adress, phone, mail } = CONTACT;
+	const { name, adress, phone, mail, mail_1 } = CONTACT;
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.inside}>
@@ -26,9 +26,16 @@ const Footer = () => {
 							<p>{name}</p>
 							<p>{adress}</p>
 							<p>{phone}</p>
-							<a href={`mailto:${mail}`} target="blank">
-								{mail}
-							</a>
+							<div className={styles.mails}>
+								<span>Mail ogólny: </span>
+								<a href={`mailto:${mail}`} target="blank">
+									{mail}
+								</a>
+								<span>Mail dyrekcja: </span>
+								<a href={`mailto:${mail_1}`} target="blank">
+									{mail_1}
+								</a>
+							</div>
 						</div>
 						<div className={styles.socials}>
 							<a href="https://www.facebook.com/przedszkolemokrzyska/" target="blank">
