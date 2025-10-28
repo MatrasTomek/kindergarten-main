@@ -1,107 +1,101 @@
-@import "../../RootStyles/common.scss";
+@import '../../RootStyles/common.scss';
 
 .wrapper {
-    position: fixed;
-    left: 50%;
-    top: 3%;
-    transform: translateX(-50%);
-    width: 95vw;
-    height: 70px;
-    background-color: $firstColor;
-    opacity: 0.9;
-    border-radius: $box-radius;
-    box-shadow: $box-schaddow;
-    z-index: 100;
+	position: fixed;
+	left: 50%;
+	top: 3%;
+	transform: translateX(-50%);
+	width: 95vw;
+	height: 70px;
+	background-color: $firstColor;
+	opacity: 0.9;
+	border-radius: $box-radius;
+	box-shadow: $box-schaddow;
+	z-index: 100;
 
-    .inside {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px;
+	.inside {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 5px;
 
+		.logo {
+			width: 50px;
+			height: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// background-image: url('../../assets/img/startViev/szylod-logo.jpg');
+			// background-size: contain;
+			// background-repeat: no-repeat;
+			// background-position: center;
+			border-radius: $box-radius;
+			margin-left: 15px;
 
-        .logo {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            // background-image: url('../../assets/img/startViev/szylod-logo.jpg');
-            // background-size: contain;
-            // background-repeat: no-repeat;
-            // background-position: center;
-            border-radius: $box-radius;
-            margin-left: 15px;
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: $box-radius;
+			}
+		}
 
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: $box-radius;
-            }
-        }
+		.menu {
+			flex-basis: 40%;
+		}
 
-        .menu {
-            flex-basis: 40%;
-        }
+		.burger {
+			flex-basis: 15%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 
-        .burger {
-            flex-basis: 15%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
+	@media screen and (min-width: map-get($breakpoints, medium)) {
+		height: 80px;
 
+		.inside {
+			.logo {
+				width: 90px;
+				height: auto;
+			}
+		}
+	}
 
+	@media screen and (min-width: map-get($breakpoints, large)) {
+		height: 90px;
 
-    @media screen and (min-width:map-get($breakpoints, medium)) {
-        height: 80px;
+		.inside {
+			.logo {
+				width: 110px;
+				height: auto;
+			}
 
-        .inside {
+			.menu {
+				flex-basis: 60%;
+			}
 
-            .logo {
-                width: 90px;
-                height: 65px;
-            }
-        }
-    }
+			.burger {
+				flex-basis: 10%;
+			}
+		}
+	}
 
-    @media screen and (min-width:map-get($breakpoints, large)) {
-        height: 90px;
+	@media screen and (min-width: map-get($breakpoints, x-large)) {
+		.inside {
+			.logo {
+				width: 110px;
+				height: auto;
+			}
 
-        .inside {
+			.menu {
+				flex-basis: 70%;
+			}
 
-            .logo {
-                width: 110px;
-                height: 75px;
-            }
-
-            .menu {
-                flex-basis: 60%;
-            }
-
-            .burger {
-                flex-basis: 10%;
-            }
-        }
-    }
-
-    @media screen and (min-width:map-get($breakpoints, x-large)) {
-        .inside {
-
-            .logo {
-                width: 110px;
-
-            }
-
-            .menu {
-                flex-basis: 70%;
-            }
-
-            .burger {
-                display: none;
-            }
-        }
-    }
+			.burger {
+				display: none;
+			}
+		}
+	}
 }
