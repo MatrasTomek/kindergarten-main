@@ -62,4 +62,9 @@ export const DOCS_ABOUT_RECRUITMENT = [
 		name: 'Harmonogram czynności w postępowaniu rekrutacyjnym [PDF]',
 		path: 'HARMONOGRAM-REKRUTACJI-DO-PUBLICZNEGO-PRZEDSZKOLA.pdf',
 	},
+	{
+		id: 'information-card',
+		name: 'Oświadczenie rodziców kandydata [PDF]',
+		path: 'Oswiadczenie_rodzicow_kandydata.pdf',
+	},
 ];
