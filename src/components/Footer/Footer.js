@@ -67,9 +67,9 @@ const Footer = () => {
 				<div className={styles.copyrights}>
 					<p>&copy; 2025 Publiczne Przedszkole Parafialne w Mokrzyskach</p>
 
-					<a href="https://www.developerweb.pl/" target="blanc">
+					<a href="https://www.nd-soft.pl/" target="blanc">
 						{' '}
-						madeBy: ND
+						madeBy: NDSOFT
 					</a>
 				</div>
 			</div>
