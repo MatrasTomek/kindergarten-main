@@ -44,6 +44,11 @@ export const DOCS_ABOUT_KINDERGARTEN = [
 		name: 'Projekt – „Miś w świecie literatury” [PDF]',
 		path: 'MALYMIS1.pdf',
 	},
+	{
+		id: 'project-fit',
+		name: 'Konkurs - Moje zdrowie na talerzu” [PDF]',
+		path: 'Matryka_konkurs_zdrowie.pdf',
+	},
 ];
 
 export const DOCS_ABOUT_RECRUITMENT = [
